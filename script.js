@@ -1719,18 +1719,26 @@ function setupWorksPage() {
   const viewButtons = [...page.querySelectorAll("[data-view]")];
   const projects = [...page.querySelectorAll("[data-project]")];
   const projectGrid = page.querySelector("[data-project-grid]");
+  const graphicsGallery = page.querySelector("[data-graphics-gallery]");
+  const viewControls = page.querySelector(".works-view-controls");
   const count = page.querySelector("[data-project-count]");
 
   const applyFilter = (category) => {
+    const isGraphics = category === "graphics";
     let visibleCount = 0;
 
     projects.forEach((project) => {
       const projectCategories = (project.dataset.category || "").split(/\s+/).filter(Boolean);
-      const isVisible = category === "all" || projectCategories.includes(category);
+      const isVisible = !isGraphics && (category === "all" || projectCategories.includes(category));
       project.classList.toggle("is-filtered-out", !isVisible);
       project.setAttribute("aria-hidden", String(!isVisible));
       if (isVisible) visibleCount += 1;
     });
+
+    graphicsGallery?.classList.toggle("is-visible", isGraphics);
+    graphicsGallery?.setAttribute("aria-hidden", String(!isGraphics));
+    viewControls?.classList.toggle("is-hidden", isGraphics);
+    if (isGraphics) visibleCount = graphicsGallery?.children.length || 0;
 
     filters.forEach((button) => {
       const isActive = button.dataset.filter === category;
