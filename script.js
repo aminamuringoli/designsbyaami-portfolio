@@ -1239,7 +1239,8 @@ function setupDraggableHeroObjects() {
       const deltaY = event.clientY - startY;
 
       if (!didDrag) {
-        if (pointerType === "touch" && Math.abs(deltaY) > Math.abs(deltaX) && Math.abs(deltaY) > 8) return;
+        const desktopPreviewActive = document.documentElement.classList.contains("desktop-preview-active");
+        if (!desktopPreviewActive && pointerType === "touch" && Math.abs(deltaY) > Math.abs(deltaX) && Math.abs(deltaY) > 8) return;
         if (Math.hypot(deltaX, deltaY) < 5) return;
 
         didDrag = true;

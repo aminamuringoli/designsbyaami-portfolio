@@ -19247,13 +19247,13 @@ html[data-theme="dark"] .contact-service-option input:checked + label {
 
 .arjuna-call-button__avatar img {
   display: block;
-  width: 92px;
-  height: 92px;
+  width: 100%;
+  height: 100%;
   max-width: none;
   object-fit: cover;
   object-position: 50% 34%;
-  filter: grayscale(1);
-  transform: translate(-42px, -20px);
+  filter: none;
+  transform: none;
 }
 
 .arjuna-call-button__you {
@@ -19586,7 +19586,7 @@ html[data-theme="dark"] .works-project-card span {
 /* The annotated overlap belongs to roomy layouts; mobile keeps natural flow. */
 @media (min-width: 810px) {
   .home-whatsapp-cta {
-    margin-top: -199px;
+    margin-top: -130px;
   }
 }
 
@@ -19971,6 +19971,72 @@ html.desktop-preview-active .works-project-grid {
 html.desktop-preview-active .contact-enquiry__grid,
 html.desktop-preview-active .contact-social-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* Scaled desktop mode uses a stable 1280px composition. Avoid viewport-height
+   anchors and desktop-only negative overlaps that become exaggerated on phones. */
+html.desktop-preview-active .hero-only-page .reference-hero.hero-only-section {
+  min-height: 920px;
+}
+
+html.desktop-preview-active .hero-only-page .hero-content {
+  padding-top: 78px;
+}
+
+html.desktop-preview-active .sara-sticker,
+html.desktop-preview-active [data-draggable] {
+  touch-action: none;
+}
+
+html.desktop-preview-active .sara-sticker--sara-note {
+  top: 54px;
+}
+
+html.desktop-preview-active .muhid-music-player {
+  top: 64px;
+}
+
+html.desktop-preview-active .hero-wall-prop--paperclip {
+  top: 540px;
+}
+
+html.desktop-preview-active .hero-wall-prop--binder {
+  top: 530px;
+}
+
+html.desktop-preview-active .sara-sticker--folder {
+  top: 680px;
+  bottom: auto;
+}
+
+html.desktop-preview-active .sara-sticker--terminal {
+  top: 600px;
+  bottom: auto;
+}
+
+html.desktop-preview-active .selected-interfaces {
+  padding-top: 36px;
+  padding-bottom: 112px;
+}
+
+html.desktop-preview-active .home-about-section,
+html.desktop-preview-active .home-skills-section,
+html.desktop-preview-active .about-page-main > section {
+  min-height: 0;
+}
+
+html.desktop-preview-active .home-skills-section {
+  padding-top: 96px;
+}
+
+html.desktop-preview-active .home-skills-overview,
+html.desktop-preview-active .about-tool-stack-section,
+html.desktop-preview-active .behind-pixels-inner {
+  margin-top: 0;
+}
+
+html.desktop-preview-active .project-action-header {
+  margin-top: 0;
 }
 
 @media (prefers-reduced-motion: reduce) {
