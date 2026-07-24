@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/desktop-preview.js?v=3"></script>
+    <meta name="description" content="Contact Aami for product design, UI/UX, brand identity, and creative direction projects." />
+    <title>Contact - Designsbyami</title>
+    <script>
+      (() => {
+        try {
+          const savedTheme = localStorage.getItem("amina-theme");
+          document.documentElement.dataset.theme = savedTheme === "dark" || savedTheme === "light" ? savedTheme : "light";
+        } catch {
+          document.documentElement.dataset.theme = "light";
+        }
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=DM+Sans:wght@300;400;500;600&family=Instrument+Serif:wght@400;700&family=Jost:wght@300;400;500;600&family=Unbounded:wght@600&display=swap" rel="stylesheet" />
+    <link rel="icon" href="/assets/user-stickers/designsbyaami-logo-header.png" type="image/png" />
+    <link rel="icon" type="image/png" href="/assets/user-stickers/designsbyaami-logo-header.png" />
+    <link rel="stylesheet" href="/styles.css?v=214" />
+  </head>
+  <body class="contact-page" data-contact-page>
+    <a class="skip-link" href="#contact-page">Skip to contact form</a>
+
+    <canvas class="gradient-flow-bg" data-gradient-flow aria-hidden="true"></canvas>
+
+    <button class="hero-theme-toggle shared-theme-toggle" id="theme-lamp" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+      <span class="hero-theme-toggle__track" aria-hidden="true"><span></span></span>
+      <span class="hero-theme-toggle__label">Dark</span>
+    </button>
+
+    <header class="site-navbar" aria-label="Primary navigation">
+      <nav class="site-navbar__pill">
+        <a class="site-navbar__brand" href="/" aria-label="Designs by Aami — Home">
+          <img src="/assets/user-stickers/designsbyaami-logo-header.png" alt="Designs by Aami" />
+        </a>
+        <span class="site-navbar__indicator" aria-hidden="true"></span>
+        <a href="/" class="site-navbar__link"><img class="site-navbar__icon" src="/assets/icons/lucide-home.svg" alt="" aria-hidden="true" /><span>Home</span></a>
+        <a href="/about/" class="site-navbar__link"><img class="site-navbar__icon" src="/assets/icons/lucide-user.svg" alt="" aria-hidden="true" /><span>About</span></a>
+        <a href="/works/" class="site-navbar__link"><img class="site-navbar__icon" src="/assets/icons/lucide-briefcase.svg" alt="" aria-hidden="true" /><span>Works</span></a>
+        <a href="/resume/" class="site-navbar__link"><img class="site-navbar__icon" src="/assets/icons/lucide-file-text.svg" alt="" aria-hidden="true" /><span>Resume</span></a>
+        <a href="/contact/" class="site-navbar__link is-active" data-nav-section="contact-page" aria-current="page"><img class="site-navbar__icon" src="/assets/icons/lucide-message.svg" alt="" aria-hidden="true" /><span>Contact</span></a>
+      </nav>
+    </header>
+
+    <main id="contact-page" class="contact-page-main">
+      <section class="contact-enquiry" aria-labelledby="contact-title">
+        <header class="contact-enquiry__header">
+          <h1 id="contact-title">Let&rsquo;s Work Together</h1>
+        </header>
+
+        <form class="contact-form contact-enquiry__form" data-contact-form>
+          <div class="contact-enquiry__grid">
+            <div class="contact-field">
+              <label for="contact-name">Your name <span aria-hidden="true">*</span></label>
+              <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Amina M" required />
+            </div>
+
+            <div class="contact-field">
+              <label for="contact-email">Email <span aria-hidden="true">*</span></label>
+              <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required />
+            </div>
+
+            <div class="contact-field">
+              <label for="contact-service">Service <span aria-hidden="true">*</span></label>
+              <select id="contact-service" name="service" required>
+                <option value="" selected disabled>Select service</option>
+                <option value="Product design">Product design</option>
+                <option value="UX/UI design">UX/UI design</option>
+                <option value="Website design">Website design</option>
+                <option value="Brand identity">Brand identity</option>
+                <option value="Graphic design">Graphic design</option>
+                <option value="Something else">Something else</option>
+              </select>
+            </div>
+
+            <div class="contact-field">
+              <label for="contact-timeline">When?</label>
+              <select id="contact-timeline" name="timeline">
+                <option value="" selected>Select timeline</option>
+                <option value="As soon as possible">As soon as possible</option>
+                <option value="Within 1 month">Within 1 month</option>
+                <option value="Within 2-3 months">Within 2&ndash;3 months</option>
+                <option value="Flexible">Flexible</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="contact-field contact-field--brief">
+            <label for="contact-message">A little brief</label>
+            <textarea id="contact-message" name="message" rows="5" placeholder="What are you building? Who is it for? What would make this project a success?" required></textarea>
+          </div>
+
+          <fieldset class="contact-services">
+            <legend>What are you here for?</legend>
+            <div class="contact-services__options">
+              <span class="contact-service-option">
+                <input id="service-website" name="services" type="checkbox" value="Website" />
+                <label for="service-website">Website</label>
+              </span>
+              <span class="contact-service-option">
+                <input id="service-application" name="services" type="checkbox" value="Application" />
+                <label for="service-application">Application</label>
+              </span>
+              <span class="contact-service-option">
+                <input id="service-ux-audit" name="services" type="checkbox" value="UX audit" />
+                <label for="service-ux-audit">UX audit</label>
+              </span>
+              <span class="contact-service-option">
+                <input id="service-design-system" name="services" type="checkbox" value="Design system" />
+                <label for="service-design-system">Design system</label>
+              </span>
+              <span class="contact-service-option">
+                <input id="service-talk" name="services" type="checkbox" value="Talk session" />
+                <label for="service-talk">Talk session</label>
+              </span>
+              <span class="contact-service-option">
+                <input id="service-brand" name="services" type="checkbox" value="Brand identity" />
+                <label for="service-brand">Brand identity</label>
+              </span>
+              <span class="contact-service-option">
+                <input id="service-other" name="services" type="checkbox" value="Something else" />
+                <label for="service-other">Something else</label>
+              </span>
+            </div>
+          </fieldset>
+
+          <div class="contact-form__actions">
+            <button class="contact-submit" type="submit">Send it</button>
+            <p class="contact-reply-note">Usually replies within 24 hours on weekdays.</p>
+          </div>
+          <p class="contact-form-status" data-contact-status aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="contact-internet" aria-labelledby="contact-social-title">
+        <header class="contact-internet__header">
+          <h2 id="contact-social-title">Find me on the internet.</h2>
+        </header>
+
+        <div class="contact-social-grid">
+          <a class="contact-social-card contact-social-card--linkedin" href="https://www.linkedin.com/in/aminamuringoli/" target="_blank" rel="noopener noreferrer">
+            <span class="contact-social-card__icon"><img src="/assets/contact/linkedin.svg" alt="" /></span>
+            <span><strong>LinkedIn</strong><small>aminamuringoli</small></span>
+          </a>
+          <a class="contact-social-card contact-social-card--instagram" href="https://www.instagram.com/designsbyaami/" target="_blank" rel="noopener noreferrer">
+            <span class="contact-social-card__icon"><img src="/assets/contact/instagram.svg" alt="" /></span>
+            <span><strong>Instagram</strong><small>@designsbyaami</small></span>
+          </a>
+          <a class="contact-social-card contact-social-card--behance" href="https://www.behance.net/aminamuringoli" target="_blank" rel="noopener noreferrer">
+            <span class="contact-social-card__icon"><img src="/assets/contact/behance.svg" alt="" /></span>
+            <span><strong>Behance</strong><small>aminamuringoli</small></span>
+          </a>
+          <a class="contact-social-card contact-social-card--dribbble" href="https://dribbble.com/aminamuringoli" target="_blank" rel="noopener noreferrer">
+            <span class="contact-social-card__icon"><img src="/assets/contact/dribbble.svg" alt="" /></span>
+            <span><strong>Dribbble</strong><small>@aminamuringoli</small></span>
+          </a>
+          <a class="contact-social-card contact-social-card--medium" href="https://medium.com/@aminamuringoli" target="_blank" rel="noopener noreferrer">
+            <span class="contact-social-card__icon"><img src="/assets/contact/medium.svg" alt="" /></span>
+            <span><strong>Medium</strong><small>@aminamuringoli</small></span>
+          </a>
+          <a class="contact-social-card contact-social-card--github" href="https://github.com/aminamuringoli" target="_blank" rel="noopener noreferrer">
+            <span class="contact-social-card__icon"><img src="/assets/contact/github.svg" alt="" /></span>
+            <span><strong>GitHub</strong><small>aminamuringoli</small></span>
+          </a>
+        </div>
+      </section>
+
+      <footer class="contact-page-footer">
+        <p>2026 &copy; Designsbyaami</p>
+      </footer>
+    </main>
+
+    <script src="/script.js?v=126"></script>
+  </body>
+</html>

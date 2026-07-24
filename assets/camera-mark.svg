@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118 82" fill="none" role="img" aria-label="Digital camera">
+  <g stroke="#fd1e1f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 28h20l8-10h26l8 10h20c4 0 7 3 7 7v31c0 4-3 7-7 7H18c-4 0-7-3-7-7V35c0-4 3-7 7-7Z" />
+    <circle cx="59" cy="51" r="16" />
+    <circle cx="94" cy="39" r="3" fill="#fd1e1f" stroke="none" />
+    <path d="M29 28v-8h14" />
+  </g>
+</svg>

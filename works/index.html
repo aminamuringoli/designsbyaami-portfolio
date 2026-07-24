@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/desktop-preview.js?v=3"></script>
+    <meta
+      name="description"
+      content="Selected product design, case study, branding, and landing page work by Aami."
+    />
+    <title>Works - Designsbyami</title>
+    <script>
+      (() => {
+        try {
+          const savedTheme = localStorage.getItem("amina-theme");
+          document.documentElement.dataset.theme = savedTheme === "dark" || savedTheme === "light" ? savedTheme : "light";
+        } catch {
+          document.documentElement.dataset.theme = "light";
+        }
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=DM+Sans:wght@300;400;500;600&family=Instrument+Serif:wght@400;700&family=Jost:wght@300;400;500;600&family=Unbounded:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="/assets/user-stickers/designsbyaami-logo-header.png" />
+    <link rel="stylesheet" href="/styles.css?v=214" />
+  </head>
+  <body class="works-page" data-works-page>
+    <a class="skip-link" href="#works-page">Skip to selected work</a>
+
+    <canvas class="gradient-flow-bg" data-gradient-flow aria-hidden="true"></canvas>
+
+    <button class="hero-theme-toggle shared-theme-toggle" id="theme-lamp" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+      <span class="hero-theme-toggle__track" aria-hidden="true"><span></span></span>
+      <span class="hero-theme-toggle__label">Dark</span>
+    </button>
+
+    <header class="site-navbar" aria-label="Primary navigation">
+      <nav class="site-navbar__pill">
+        <a class="site-navbar__brand" href="/" aria-label="Designs by Aami — Home">
+          <img src="/assets/user-stickers/designsbyaami-logo-header.png" alt="Designs by Aami" />
+        </a>
+        <span class="site-navbar__indicator" aria-hidden="true"></span>
+        <a href="/" class="site-navbar__link"><img class="site-navbar__icon" src="/assets/icons/lucide-home.svg" alt="" aria-hidden="true" /><span>Home</span></a>
+        <a href="/about/" class="site-navbar__link"><img class="site-navbar__icon" src="/assets/icons/lucide-user.svg" alt="" aria-hidden="true" /><span>About</span></a>
+        <a
+          href="/works/"
+          class="site-navbar__link is-active"
+          data-nav-section="works-page"
+          aria-current="page"
+        ><img class="site-navbar__icon" src="/assets/icons/lucide-briefcase.svg" alt="" aria-hidden="true" /><span>Works</span></a>
+        <a href="/resume/" class="site-navbar__link"><img class="site-navbar__icon" src="/assets/icons/lucide-file-text.svg" alt="" aria-hidden="true" /><span>Resume</span></a>
+        <a href="/contact/" class="site-navbar__link"><img class="site-navbar__icon" src="/assets/icons/lucide-message.svg" alt="" aria-hidden="true" /><span>Contact</span></a>
+      </nav>
+    </header>
+
+    <main id="works-page" class="works-page-main">
+      <header class="works-page-hero">
+        <p class="works-page-label">
+          <img src="/assets/icons/phosphor-star-four-fill.svg" alt="" aria-hidden="true" />
+          <span>Works</span>
+        </p>
+        <h1>Designing clarity into every experience.</h1>
+
+        <div class="works-toolbar">
+          <div class="works-filters" role="group" aria-label="Filter projects">
+            <button class="works-filter is-active" type="button" data-filter="all" aria-pressed="true">
+              <span>All</span><span>10</span>
+            </button>
+            <button class="works-filter" type="button" data-filter="case-study" aria-pressed="false">
+              <span>Projects</span><span>05</span>
+            </button>
+            <button class="works-filter" type="button" data-filter="branding" aria-pressed="false">
+              <span>Branding</span><span>02</span>
+            </button>
+            <button class="works-filter" type="button" data-filter="landing-page" aria-pressed="false">
+              <span>Landing Page</span><span>03</span>
+            </button>
+            <button class="works-filter" type="button" data-filter="graphics" aria-pressed="false">
+              <span>Graphics</span><span>02</span>
+            </button>
+          </div>
+
+          <div class="works-view-controls" role="group" aria-label="Change project view">
+            <button class="works-view-button is-active" type="button" data-view="grid" aria-pressed="true" aria-label="Grid view">
+              <span class="works-grid-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+            </button>
+            <button class="works-view-button" type="button" data-view="list" aria-pressed="false" aria-label="List view">
+              <span class="works-list-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+            </button>
+          </div>
+        </div>
+
+      </header>
+
+      <section class="works-showcase" aria-label="Aami's projects">
+        <article class="works-featured" data-project data-category="case-study">
+          <a class="works-featured-link" href="https://www.behance.net/gallery/253207765/Mandate?platform=direct" target="_blank" rel="noreferrer" aria-label="View Mandate case study on Behance">
+            <div class="works-featured-copy">
+              <div class="works-featured-heading">
+                <h2>Mandate.</h2>
+                <span>Featured</span>
+              </div>
+              <p class="works-featured-description">
+                Mandate is a financial control layer that helps people understand and manage automated financial decisions before they happen. It brings AI-agent permissions, lender decisions and financing offers into one secure place, making every action visible, explainable and controllable.
+              </p>
+              <p class="works-featured-description works-featured-description--secondary">
+                Instead of vague rejection messages, Mandate explains the factors behind a decision and lets people create plain-language rules such as “Pay recurring bills under ₹5,000 without asking me.”
+              </p>
+
+              <dl class="works-featured-meta">
+                <div><dt>Role</dt><dd>Product Designer · UX Researcher</dd></div>
+                <div><dt>Market</dt><dd>Consumer FinTech · Artificial Intelligence</dd></div>
+              </dl>
+
+              <div class="works-tags" aria-label="Mandate project tags">
+                <span>Case Study</span><span>FinTech</span><span>AI</span><span>Mobile Application</span>
+              </div>
+            </div>
+
+            <figure class="works-featured-visual">
+              <img src="/assets/tuhina-reference/juspay-genius.png" alt="Mandate financial control product interface shown on a desktop display" />
+              <figcaption>Control automated financial decisions before they happen.</figcaption>
+            </figure>
+          </a>
+        </article>
+
+        <div class="works-project-grid" data-project-grid>
+          <article class="works-project-card" data-project data-category="case-study">
+            <a href="https://www.behance.net/gallery/251783839/Skill-Swap-Learning-Platform-Product-Design?platform=direct" target="_blank" rel="noreferrer" aria-label="View SkillSwap case study on Behance">
+              <figure><img src="/assets/skillswap-cover-upload.png" alt="SkillSwap mobile product showing a skill wallet, upcoming exchanges and learning-partner matches" /></figure>
+              <div class="works-project-copy">
+                <h2>SkillSwap.</h2>
+                <p>A peer-to-peer learning platform where people exchange skills using credits, connect with mentors and discover suitable learning partners through AI matching and a trust-based reputation system.</p>
+                <div class="works-tags"><span>EdTech</span><span>Product Design</span><span>Case Study</span></div>
+              </div>
+            </a>
+          </article>
+
+          <article class="works-project-card" data-project data-category="case-study">
+            <a href="https://www.behance.net/gallery/253085727/PaySlate-Freelancer-Invoice-Payment-Dashboard?platform=direct" target="_blank" rel="noreferrer" aria-label="View PaySlate dashboard project on Behance">
+              <figure><img src="/assets/payslate-product-cover.png" alt="PaySlate finance dashboard showing invoices, payment activity and business performance" /></figure>
+              <div class="works-project-copy">
+                <h2>PaySlate.</h2>
+                <p>An all-in-one finance management platform that helps freelancers create invoices, track payments, manage expenses, and understand their business performance.</p>
+                <div class="works-tags"><span>FinTech</span><span>Dashboard</span><span>Product Design</span></div>
+              </div>
+            </a>
+          </article>
+
+          <article class="works-project-card" data-project data-category="case-study">
+            <a href="https://www.behance.net/gallery/252505921/Google-Pay-Redesign-for-Elderly-and-First-Time-Users?platform=direct" target="_blank" rel="noreferrer" aria-label="View Google Pay redesign case study on Behance">
+              <figure><img src="/assets/google-pay-redesign-cover.png" alt="Google Pay redesign shown on a mobile phone with practice payments and simplified account actions" /></figure>
+              <div class="works-project-copy">
+                <h2>Google Pay Redesign.</h2>
+                <p>A concept redesign for elders and first-time digital payment users, with practice payments, payment limits, trusted-family support and clearer guidance.</p>
+                <div class="works-tags"><span>FinTech</span><span>Mobile Application</span><span>UX Redesign</span></div>
+              </div>
+            </a>
+          </article>
+
+          <article class="works-project-card" data-project data-category="case-study">
+            <a href="https://www.behance.net/gallery/250505613/Happy-Cart-Mobile-app-UX-UI-Design?platform=direct" target="_blank" rel="noreferrer" aria-label="View Happy Cart case study on Behance">
+              <figure><img src="/assets/happy-cart-cover.png" alt="Happy Cart mobile shopping interface presenting new products and price comparisons" /></figure>
+              <div class="works-project-copy">
+                <h2>Happy Cart.</h2>
+                <p>A simplified price-comparison shopping experience that helps people explore products, compare prices and identify the best option without unnecessary information.</p>
+                <div class="works-tags"><span>E-commerce</span><span>Web Application</span><span>UX Redesign</span></div>
+              </div>
+            </a>
+          </article>
+
+          <article class="works-project-card" data-project data-category="branding graphics">
+            <a href="https://www.behance.net/gallery/252657773/KAFFEKO-Caf-Bakery-Brand-Identity?platform=direct" target="_blank" rel="noreferrer" aria-label="View KaffeKo branding project on Behance">
+              <figure><img src="/assets/kaffeko-cover.png" alt="KaffeKo branded coffee cups, bakery box, receipt and takeaway packaging" /></figure>
+              <div class="works-project-copy">
+                <h2>KaffeKo.</h2>
+                <p>A playful food-and-beverage identity inspired by coffee, cookies and imperfect handmade forms, expressed across typography, illustration, packaging and social media.</p>
+                <div class="works-tags"><span>Food &amp; Beverage</span><span>Brand Identity</span><span>Packaging</span></div>
+              </div>
+            </a>
+          </article>
+
+          <article class="works-project-card" data-project data-category="branding graphics">
+            <a href="https://www.behance.net/gallery/253207949/bharath-traders?platform=direct" target="_blank" rel="noreferrer" aria-label="View Bharath Traders branding project on Behance">
+              <figure><img src="/assets/tuhina-gallery/branding.jpg" alt="Bharath Traders retail identity and promotional campaign" /></figure>
+              <div class="works-project-copy">
+                <h2>Bharath Traders.</h2>
+                <p>A bold identity and WhatsApp-first promotional system for a Kerala building-material retailer, including logo design, Malayalam messaging and campaign creatives.</p>
+                <div class="works-tags"><span>Retail</span><span>Brand Identity</span><span>Campaign Design</span></div>
+              </div>
+            </a>
+          </article>
+
+          <article class="works-project-card" data-project data-category="landing-page">
+            <a href="https://www.behance.net/gallery/253207871/mandate-landing-page?platform=direct" target="_blank" rel="noreferrer" aria-label="View Mandate landing page on Behance">
+              <figure><img src="/assets/mandate-landing-cover.png" alt="Mandate landing page presenting an explainable financial-control dashboard" /></figure>
+              <div class="works-project-copy">
+                <h2>Mandate — Landing Page.</h2>
+                <p>A focused product page that communicates Mandate’s AI-finance concept through clear messaging, strong hierarchy and trust-led storytelling.</p>
+                <div class="works-tags"><span>AI</span><span>FinTech</span><span>Landing Page</span><span>Web Design</span></div>
+              </div>
+            </a>
+          </article>
+
+          <article class="works-project-card" data-project data-category="landing-page">
+            <a href="https://www.behance.net/gallery/253058537/PaySlate-Invoice-Payment-Management-Landing-page?platform=direct" target="_blank" rel="noreferrer" aria-label="View PaySlate invoice and payment management landing page on Behance">
+              <figure><img src="/assets/payslate-landing-cover.png" alt="PaySlate client and invoice management interface displayed on a laptop" /></figure>
+              <div class="works-project-copy">
+                <h2>PaySlate &mdash; Landing Page.</h2>
+                <p>PaySlate is a modern SaaS landing-page concept designed to help freelancers and small businesses create invoices, monitor payment activity, manage clients, and follow up on unpaid invoices from one organised platform.</p>
+                <div class="works-tags"><span>FinTech</span><span>SaaS</span><span>Landing Page</span><span>UI/UX Design</span></div>
+              </div>
+            </a>
+          </article>
+
+          <article class="works-project-card" data-project data-category="landing-page">
+            <a href="https://www.behance.net/gallery/253208087/mu-learnconceptual-design?platform=direct" target="_blank" rel="noreferrer" aria-label="View muLearn conceptual landing page on Behance">
+              <figure><img src="/assets/mulearn-landing-cover.png" alt="muLearn conceptual landing page with a purple space-themed hero illustration" /></figure>
+              <div class="works-project-copy">
+                <h2>&micro;Learn Conceptual Landing Page.</h2>
+                <p>A conceptual design exploration presenting the community, chapters, achievements, and learning ecosystem.</p>
+                <div class="works-tags"><span>Community</span><span>Landing Page</span><span>UI/UX Design</span></div>
+              </div>
+            </a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="/script.js?v=126"></script>
+  </body>
+</html>

@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/desktop-preview.js?v=3"></script>
+    <meta
+      name="description"
+      content="Amina M - Designsbyami, UI/UX designer for web interfaces, brand identities, and digital products."
+    />
+    <title>AMINA M - Designsbyami</title>
+    <script>
+      (() => {
+        try {
+          const savedTheme = localStorage.getItem("amina-theme");
+          document.documentElement.dataset.theme = savedTheme === "dark" || savedTheme === "light" ? savedTheme : "light";
+        } catch {
+          document.documentElement.dataset.theme = "light";
+        }
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=DM+Sans:wght@300;400;500;600&family=Geist:wght@600;800&family=Instrument+Serif:wght@400;700&family=Jost:wght@300;400;500;600&family=Just+Another+Hand&family=Unbounded:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="/assets/user-stickers/designsbyaami-logo-header.png" />
+    <link rel="stylesheet" href="styles.css?v=214" />
+  </head>
+  <body class="hero-only-page has-horizontal-words is-loading">
+    <a class="skip-link" href="#home">Skip to hero</a>
+
+    <canvas class="gradient-flow-bg" data-gradient-flow aria-hidden="true"></canvas>
+
+    <div class="portfolio-loader transition-container" data-transition-theme="green" aria-hidden="true">
+      <div class="portfolio-loader-screen transition-screen"></div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="100%"
+        viewBox="0 0 3222 3114"
+        fill="none"
+        preserveAspectRatio="none"
+        class="portfolio-loader-scribble transition-scribble"
+        focusable="false"
+      >
+        <path
+          d="M268 440C514 286 774 126 892 102C1011 78 910 244 682 574C454 904 150 1368 94 1514C38 1660 230 1542 518 1292C806 1042 1250 628 1488 398C1726 168 1666 360 1398 828C1130 1296 694 2064 618 2268C542 2472 800 2258 1182 1886C1564 1514 2140 922 2540 502C2940 82 3034 80 2872 386C2710 692 1964 1664 1464 2384C964 3104 1118 2968 1564 2516C2010 2064 2758 1282 3016 1128C3274 974 2786 2060 2246 3040C2174 3170 2718 2442 3158 1810"
+          stroke="currentColor"
+          stroke-width="31%"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </svg>
+      <div class="portfolio-loader-logo transition-logo">
+        <img
+          src="assets/user-stickers/designsbyaami-logo-header.png"
+          alt=""
+          class="portfolio-loader-logo-img"
+          draggable="false"
+          decoding="sync"
+          loading="eager"
+        />
+      </div>
+    </div>
+
+    <header class="site-navbar" aria-label="Primary navigation">
+      <nav class="site-navbar__pill">
+        <a class="site-navbar__brand" href="#home" aria-label="Designs by Aami — Home">
+          <img src="assets/user-stickers/designsbyaami-logo-header.png" alt="Designs by Aami" />
+        </a>
+        <span class="site-navbar__indicator" aria-hidden="true"></span>
+        <a href="#home" class="site-navbar__link is-active" data-nav-section="home" aria-current="page"><img class="site-navbar__icon" src="/assets/icons/lucide-home.svg" alt="" aria-hidden="true" /><span>Home</span></a>
+        <a href="/about/" class="site-navbar__link"><img class="site-navbar__icon" src="/assets/icons/lucide-user.svg" alt="" aria-hidden="true" /><span>About</span></a>
+        <a href="/works/" class="site-navbar__link"><img class="site-navbar__icon" src="/assets/icons/lucide-briefcase.svg" alt="" aria-hidden="true" /><span>Works</span></a>
+        <a href="/resume/" class="site-navbar__link"><img class="site-navbar__icon" src="/assets/icons/lucide-file-text.svg" alt="" aria-hidden="true" /><span>Resume</span></a>
+        <a href="/contact/" class="site-navbar__link"><img class="site-navbar__icon" src="/assets/icons/lucide-message.svg" alt="" aria-hidden="true" /><span>Contact</span></a>
+      </nav>
+    </header>
+
+    <main id="top" class="hero-only-main">
+      <section class="hero reference-hero hero-only-section" id="home">
+        <button class="hero-theme-toggle" id="theme-lamp" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+          <span class="hero-theme-toggle__track" aria-hidden="true"><span></span></span>
+          <span class="hero-theme-toggle__label">Dark</span>
+        </button>
+
+        <div class="hero-sticker-layer" aria-label="Interactive desk stickers">
+          <div class="sara-sticker sara-sticker--note sara-sticker--sara-note" id="hero-sara-note" data-draggable tabindex="0" aria-label="Draggable design principles sticky note: Test over debate, ship it, ask why twice, metrics over pixels">
+            <img src="assets/hero-wall/sara-sticky-note.png" alt="" draggable="false" />
+            <div class="sara-sticker-note__copy" aria-hidden="true">
+              <span>Test &gt; debate</span>
+              <span>Ship it</span>
+              <span>Ask why twice</span>
+              <span>Metrics over pixels</span>
+            </div>
+          </div>
+
+          <div class="sara-sticker sara-sticker--folder" id="hero-stack-folder" data-draggable tabindex="0" aria-label="Aami's design tool stack">
+            <div class="sara-folder-icons" aria-hidden="true">
+              <span style="--icon-x: -108px; --icon-y: -36px; --icon-delay: 0ms"><img src="https://sara-khalil.pages.dev/logos/figma.svg" alt="" /></span>
+              <span style="--icon-x: -58px; --icon-y: -92px; --icon-delay: 45ms"><img src="https://sara-khalil.pages.dev/logos/obsidian.svg" alt="" /></span>
+              <span style="--icon-x: 0px; --icon-y: -114px; --icon-delay: 90ms"><img src="https://sara-khalil.pages.dev/logos/openai.svg" alt="" /></span>
+              <span style="--icon-x: 58px; --icon-y: -92px; --icon-delay: 135ms"><img src="https://sara-khalil.pages.dev/logos/claude.svg" alt="" /></span>
+              <span style="--icon-x: 108px; --icon-y: -36px; --icon-delay: 180ms"><img src="https://sara-khalil.pages.dev/logos/github.svg" alt="" /></span>
+            </div>
+            <div class="sara-folder-visual" aria-hidden="true">
+              <img class="sara-folder-closed" src="https://sara-khalil.pages.dev/folder-closed.png" alt="" draggable="false" />
+              <img class="sara-folder-open" src="https://sara-khalil.pages.dev/folder-open.png" alt="" draggable="false" />
+            </div>
+            <span class="sara-folder-label" aria-hidden="true">my stacks</span>
+          </div>
+
+          <div class="sara-sticker sara-sticker--terminal" id="hero-profile-terminal" data-draggable tabindex="0" aria-label="Aami's profile terminal">
+            <div class="sara-terminal-bar" aria-hidden="true"><i></i><i></i><i></i><span>aami — zsh</span></div>
+            <div class="sara-terminal-body">
+              <p><em>~ $</em> who_am_i</p>
+              <strong>Product Designer &amp; UI/UX Designer</strong>
+              <p><em>~ $</em> focus</p>
+              <strong>Thoughtful digital experiences</strong>
+              <p><em>~ $</em> currently</p>
+              <strong>Designing products, websites &amp; visual identities</strong>
+              <p class="sara-terminal-cursor"><em>~ $</em> <i aria-hidden="true"></i></p>
+            </div>
+          </div>
+
+          <div class="muhid-music-player" id="hero-music-player" data-draggable data-music-player tabindex="0" aria-label="Draggable music player">
+            <button class="muhid-music-player__vinyl" type="button" data-music-toggle aria-label="Play Divenire" aria-pressed="false">
+              <img src="assets/muhid-player/vinyl-record.png" alt="" draggable="false" />
+              <span class="muhid-music-player__vinyl-action" aria-hidden="true"><img class="muhid-music-player__state-icon" src="assets/muhid-player/play.svg" alt="" /></span>
+            </button>
+            <div class="muhid-music-player__panel">
+              <span class="muhid-music-player__equalizer" aria-hidden="true">
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              </span>
+              <p class="muhid-music-player__title" data-music-title>Divenire</p>
+              <p class="muhid-music-player__meta" data-music-meta>Ludovico Einaudi, Robert Ziegler, and Royal Philharmonic Orchestra &bull; Divenire (Deluxe Edition)</p>
+              <div class="muhid-music-player__controls">
+                <button type="button" data-music-prev aria-label="Previous track"><img src="assets/muhid-player/skip-back.svg" alt="" /></button>
+                <button class="muhid-music-player__play" type="button" data-music-toggle aria-label="Play Divenire" aria-pressed="false"><img class="muhid-music-player__state-icon" src="assets/muhid-player/play.svg" alt="" /></button>
+                <button type="button" data-music-next aria-label="Next track"><img src="assets/muhid-player/skip-forward.svg" alt="" /></button>
+              </div>
+            </div>
+            <audio preload="metadata" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4a/7e/37/4a7e3771-0b91-806b-66a1-1a166d2a0ceb/mzaf_16913843404009221634.plus.aac.p.m4a"></audio>
+          </div>
+
+          <div class="sara-sticker hero-wall-prop hero-wall-prop--paperclip" id="hero-paperclip" data-draggable tabindex="0" aria-label="Draggable silver paperclip">
+            <img src="assets/hero-wall/silver-paperclip.png" alt="" draggable="false" />
+          </div>
+
+          <div class="sara-sticker hero-wall-prop hero-wall-prop--binder" id="hero-binder-clip" data-draggable tabindex="0" aria-label="Draggable red binder clip">
+            <img src="assets/hero-wall/red-binder-clip.png" alt="" draggable="false" />
+          </div>
+        </div>
+
+        <div class="hero-content">
+          <h1 class="hero-headline">
+            <span class="hero-headline__line">
+              I
+              <a class="hero-title-img hero-title-about" id="selfie" href="#about" aria-label="About Aami">
+                <span>About me</span>
+              </a>
+              shape thoughtful, expressive
+            </span>
+            <span class="hero-headline__line">
+              digital experiences
+              <a class="hero-title-img hero-title-work" id="website" href="#works" aria-label="View Aami's work">
+                <span>View work</span>
+              </a>
+              designed to feel
+            </span>
+            <span class="hero-headline__line">clear, human and memorable.</span>
+          </h1>
+
+          <aside class="hero-ask-ai" aria-label="Ask an AI assistant about Aami">
+            <div class="hero-ask-ai__copy">
+              <p>
+                <img src="/assets/icons/ask-ai-sparkle.svg" alt="" />
+                <strong>Ask AI</strong>
+              </p>
+              <span>About Aami</span>
+            </div>
+            <span class="hero-ask-ai__divider" aria-hidden="true"></span>
+            <div class="hero-ask-ai__services">
+              <a class="hero-ask-ai__service hero-ask-ai__service--chatgpt" href="https://chatgpt.com/?q=" data-ask-ai-base="https://chatgpt.com/?q=" data-ask-ai-provider="ChatGPT" target="_blank" rel="noopener noreferrer" aria-label="Ask ChatGPT about Aami">
+                <img src="/assets/icons/ask-ai-chatgpt.svg" alt="" />
+              </a>
+              <a class="hero-ask-ai__service hero-ask-ai__service--claude" href="https://claude.ai/new?q=" data-ask-ai-base="https://claude.ai/new?q=" data-ask-ai-provider="Claude" target="_blank" rel="noopener noreferrer" aria-label="Ask Claude about Aami">
+                <img src="/assets/icons/ask-ai-claude.svg" alt="" />
+              </a>
+              <a class="hero-ask-ai__service hero-ask-ai__service--gemini" href="https://www.google.com/search?udm=50&amp;aep=11&amp;q=" data-ask-ai-base="https://www.google.com/search?udm=50&amp;aep=11&amp;q=" data-ask-ai-provider="Gemini" target="_blank" rel="noopener noreferrer" aria-label="Ask Gemini about Aami">
+                <img src="/assets/icons/ask-ai-gemini.svg" alt="" />
+              </a>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="selected-interfaces" id="selected-interfaces" aria-label="Selected interfaces">
+        <div class="selected-interfaces__inner">
+          <div class="selected-interfaces__rows" aria-label="Selected design work">
+            <div class="selected-interfaces__viewport">
+              <ul class="selected-interfaces__track selected-interfaces__track--left">
+                <li><div class="selected-interface-card selected-interface-card--invoice"><img src="assets/muhid-selected-interfaces/c6-invoicex.webp" alt="Invoice interface work" /><span class="selected-interface-card__badge">↗</span></div></li>
+                <li><div class="selected-interface-card selected-interface-card--dimsum"><img src="assets/muhid-selected-interfaces/c2-dimsum.webp" alt="D2C food interface work" /><span class="selected-interface-card__badge">↗</span></div></li>
+                <li><div class="selected-interface-card selected-interface-card--food"><img src="assets/muhid-selected-interfaces/c3-food.webp" alt="Food ordering interface work" /><span class="selected-interface-card__badge">↗</span></div></li>
+                <li><div class="selected-interface-card selected-interface-card--analytics"><img src="assets/muhid-selected-interfaces/c9-analytics-new.webp" alt="Analytics interface work" /><span class="selected-interface-card__badge">↗</span></div></li>
+                <li><div class="selected-interface-card selected-interface-card--activity"><img src="assets/muhid-selected-interfaces/c12-activity.webp" alt="Activity interface work" /><span class="selected-interface-card__badge">↗</span></div></li>
+                <li aria-hidden="true"><div class="selected-interface-card selected-interface-card--invoice"><img src="assets/muhid-selected-interfaces/c6-invoicex.webp" alt="" /><span class="selected-interface-card__badge">↗</span></div></li>
+                <li aria-hidden="true"><div class="selected-interface-card selected-interface-card--dimsum"><img src="assets/muhid-selected-interfaces/c2-dimsum.webp" alt="" /><span class="selected-interface-card__badge">↗</span></div></li>
+                <li aria-hidden="true"><div class="selected-interface-card selected-interface-card--food"><img src="assets/muhid-selected-interfaces/c3-food.webp" alt="" /><span class="selected-interface-card__badge">↗</span></div></li>
+                <li aria-hidden="true"><div class="selected-interface-card selected-interface-card--analytics"><img src="assets/muhid-selected-interfaces/c9-analytics-new.webp" alt="" /><span class="selected-interface-card__badge">↗</span></div></li>
+                <li aria-hidden="true"><div class="selected-interface-card selected-interface-card--activity"><img src="assets/muhid-selected-interfaces/c12-activity.webp" alt="" /><span class="selected-interface-card__badge">↗</span></div></li>
+              </ul>
+            </div>
+            <div class="selected-interfaces__viewport">
+              <ul class="selected-interfaces__track selected-interfaces__track--right">
+                <li><div class="selected-interface-card selected-interface-card--profile"><img src="assets/muhid-selected-interfaces/c19-profile-new.webp" alt="Profile interface work" /><span class="selected-interface-card__badge">↗</span></div></li>
+                <li><div class="selected-interface-card selected-interface-card--tracking"><img src="assets/muhid-selected-interfaces/c16-tracking.webp" alt="Tracking interface work" /><span class="selected-interface-card__badge">↗</span></div></li>
+                <li><div class="selected-interface-card selected-interface-card--checkout"><img src="assets/muhid-selected-interfaces/Checkout.webp" alt="Checkout interface work" /><span class="selected-interface-card__badge">↗</span></div></li>
+                <li><div class="selected-interface-card selected-interface-card--canvas"><img src="assets/muhid-selected-interfaces/BCcanvas.webp" alt="Bitcoin interface work" /><span class="selected-interface-card__badge">↗</span></div></li>
+                <li><div class="selected-interface-card selected-interface-card--chat"><img src="assets/muhid-selected-interfaces/c18-chat-new.webp" alt="Chat interface work" /><span class="selected-interface-card__badge">↗</span></div></li>
+                <li aria-hidden="true"><div class="selected-interface-card selected-interface-card--profile"><img src="assets/muhid-selected-interfaces/c19-profile-new.webp" alt="" /><span class="selected-interface-card__badge">↗</span></div></li>
+                <li aria-hidden="true"><div class="selected-interface-card selected-interface-card--tracking"><img src="assets/muhid-selected-interfaces/c16-tracking.webp" alt="" /><span class="selected-interface-card__badge">↗</span></div></li>
+                <li aria-hidden="true"><div class="selected-interface-card selected-interface-card--checkout"><img src="assets/muhid-selected-interfaces/Checkout.webp" alt="" /><span class="selected-interface-card__badge">↗</span></div></li>
+                <li aria-hidden="true"><div class="selected-interface-card selected-interface-card--canvas"><img src="assets/muhid-selected-interfaces/BCcanvas.webp" alt="" /><span class="selected-interface-card__badge">↗</span></div></li>
+                <li aria-hidden="true"><div class="selected-interface-card selected-interface-card--chat"><img src="assets/muhid-selected-interfaces/c18-chat-new.webp" alt="" /><span class="selected-interface-card__badge">↗</span></div></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="hero-scroll-spacer" aria-hidden="true"></div>
+
+      <section class="home-about-section" id="about" aria-labelledby="home-about-title">
+        <div class="home-about-layout">
+          <div class="home-about-portrait" data-about-reveal="portrait">
+            <p class="home-about-put-back" aria-hidden="true">put it back please</p>
+            <figure class="home-about-polaroid" data-about-polaroid tabindex="0" aria-label="Draggable portrait of Aami">
+              <div class="home-about-photo-window">
+                <img
+                  src="assets/about-amina-photo.jpeg"
+                  alt="Aami smiling in a cream hijab and glasses"
+                  loading="lazy"
+                  decoding="async"
+                  width="960"
+                  height="1280"
+                />
+              </div>
+              <p class="home-about-drag-note" aria-hidden="true">you can drag me</p>
+            </figure>
+          </div>
+
+          <div class="home-about-content">
+            <p class="home-about-eyebrow" data-about-reveal="eyebrow">
+              <span aria-hidden="true"></span>
+              About me
+            </p>
+
+            <h2 class="home-about-title" id="home-about-title" data-about-title>
+              a little about myself
+            </h2>
+
+            <div class="home-about-copy">
+              <p data-about-reveal="copy">
+                My journey into design started with a love for visual creativity. I began by exploring graphic design, branding and logo design before moving into UI/UX and product design. Today I focus on designing intuitive digital products, websites and visual identities that balance user needs, business goals and visual detail.
+              </p>
+              <p data-about-reveal="copy">
+                I enjoy continuously learning, experimenting and building products that improve my craft as a Product Designer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-skills-section" id="skills" aria-labelledby="home-skills-title" data-home-skills>
+        <div class="home-skills-inner">
+          <div class="home-skills-overview">
+            <div class="home-skills-intro">
+              <h2 class="home-skills-title" id="home-skills-title">
+                I shape <strong>thoughtful digital products</strong> for tangled workflows, build
+                <strong>clear visual systems</strong> and care about the details people actually feel.
+              </h2>
+            </div>
+
+            <ul class="home-skills-grid" aria-label="Design capabilities">
+              <li class="home-skill-item">
+                <img src="assets/ritwij-skills/skill-product-design.png" alt="" aria-hidden="true" />
+                <span>Product Design</span>
+              </li>
+              <li class="home-skill-item">
+                <img src="assets/ritwij-skills/skill-data-driven.png" alt="" aria-hidden="true" />
+                <span>Brand Identity</span>
+              </li>
+              <li class="home-skill-item">
+                <img src="assets/ritwij-skills/skill-design-systems.png" alt="" aria-hidden="true" />
+                <span>Visual Systems</span>
+              </li>
+              <li class="home-skill-item">
+                <img src="assets/ritwij-skills/skill-prototyping.png" alt="" aria-hidden="true" />
+                <span>Prototyping</span>
+              </li>
+              <li class="home-skill-item">
+                <img src="assets/ritwij-skills/skill-ai-workflows.png" alt="" aria-hidden="true" />
+                <span>User Flows</span>
+              </li>
+              <li class="home-skill-item">
+                <img src="assets/ritwij-skills/skill-interaction-design.png" alt="" aria-hidden="true" />
+                <span>Interaction Design</span>
+              </li>
+              <li class="home-skill-item">
+                <img src="assets/ritwij-skills/skill-figma-to-code.png" alt="" aria-hidden="true" />
+                <span>Figma to Code</span>
+              </li>
+              <li class="home-skill-item">
+                <img src="assets/ritwij-skills/skill-ux-research.png" alt="" aria-hidden="true" />
+                <span>UX Research</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="home-toolstack">
+            <div class="home-toolstack-grid">
+              <div class="home-tool-group">
+                <h3>Design &amp; Prototyping</h3>
+                <div class="home-tool-icons">
+                  <img src="assets/ritwij-skills/tool-design-1.png" alt="Figma" title="Figma" />
+                  <img src="assets/ritwij-skills/tool-design-2.png" alt="Framer" title="Framer" />
+                  <img src="assets/ritwij-skills/tool-design-3.png" alt="Rive" title="Rive" />
+                  <img src="assets/ritwij-skills/tool-design-4.png" alt="ProtoPie" title="ProtoPie" />
+                </div>
+              </div>
+
+              <div class="home-tool-group">
+                <h3>AI Workflow</h3>
+                <div class="home-tool-icons">
+                  <img src="assets/ritwij-skills/tool-ai-1.png" alt="Claude" title="Claude" />
+                  <img src="assets/ritwij-skills/tool-ai-2.png" alt="ChatGPT" title="ChatGPT" />
+                  <img src="assets/ritwij-skills/tool-ai-3.png" alt="AI prototyping tool" title="AI prototyping tool" />
+                  <img src="assets/ritwij-skills/tool-ai-4.png" alt="Lovable" title="Lovable" />
+                  <img src="assets/ritwij-skills/tool-ai-5.png" alt="Replit" title="Replit" />
+                </div>
+              </div>
+
+              <div class="home-tool-group">
+                <h3>Collaboration &amp; Handoff</h3>
+                <div class="home-tool-icons">
+                  <img src="assets/ritwij-skills/tool-collab-1.png" alt="Collaboration tool" title="Collaboration tool" />
+                  <img src="assets/ritwij-skills/tool-collab-2.png" alt="Notion" title="Notion" />
+                  <img src="assets/ritwij-skills/tool-collab-3.png" alt="Design handoff tool" title="Design handoff tool" />
+                </div>
+              </div>
+
+              <div class="home-tool-group">
+                <h3>Research &amp; Testing</h3>
+                <div class="home-tool-icons">
+                  <img src="assets/ritwij-skills/tool-research-1.png" alt="Maze" title="Maze" />
+                  <img src="assets/ritwij-skills/tool-research-2.png" alt="Miro" title="Miro" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Retired auto-scrolling gallery; replaced by Selected interfaces above.
+      <section class="tuhina-gallery-section" id="tuhina-gallery" aria-label="Scrolling design gallery">
+        <div class="tuhina-gallery-viewport">
+          <ul class="tuhina-gallery-track" data-tuhina-gallery-track data-gallery-items="9">
+            <li class="tuhina-gallery-item">
+              <a class="tuhina-gallery-card" aria-label="Website UI">
+                <img src="assets/tuhina-gallery/website-ui.png" alt="Website UI preview" />
+                <span class="tuhina-gallery-label">Website UI</span>
+              </a>
+            </li>
+            <li class="tuhina-gallery-item">
+              <a class="tuhina-gallery-card" aria-label="Brand Playbook">
+                <img src="assets/tuhina-gallery/brand-playbook.png" alt="Brand Playbook preview" />
+                <span class="tuhina-gallery-label">Brand Playbook</span>
+              </a>
+            </li>
+            <li class="tuhina-gallery-item">
+              <a class="tuhina-gallery-card" aria-label="Branding">
+                <img src="assets/tuhina-gallery/branding.jpg" alt="Branding preview" />
+                <span class="tuhina-gallery-label">Branding</span>
+              </a>
+            </li>
+            <li class="tuhina-gallery-item">
+              <a class="tuhina-gallery-card" aria-label="Merch Design">
+                <img src="assets/tuhina-gallery/merch-design.png" alt="Merch Design preview" />
+                <span class="tuhina-gallery-label">Merch Design</span>
+              </a>
+            </li>
+            <li class="tuhina-gallery-item">
+              <a class="tuhina-gallery-card" aria-label="Sneaker design">
+                <img src="assets/tuhina-gallery/sneaker-design.png" alt="Sneaker design preview" />
+                <span class="tuhina-gallery-label">Sneaker design</span>
+              </a>
+            </li>
+            <li class="tuhina-gallery-item">
+              <a class="tuhina-gallery-card" aria-label="Ad Campaign">
+                <img src="assets/tuhina-gallery/ad-campaign.png" alt="Ad Campaign preview" />
+                <span class="tuhina-gallery-label">Ad Campaign</span>
+              </a>
+            </li>
+            <li class="tuhina-gallery-item">
+              <a class="tuhina-gallery-card" aria-label="Social Media Posts">
+                <img src="assets/tuhina-gallery/social-media.png" alt="Social Media Posts preview" />
+                <span class="tuhina-gallery-label">Social Media Posts</span>
+              </a>
+            </li>
+            <li class="tuhina-gallery-item">
+              <a class="tuhina-gallery-card" aria-label="Packaging">
+                <img src="assets/tuhina-gallery/packaging.jpg" alt="Packaging preview" />
+                <span class="tuhina-gallery-label">Packaging</span>
+              </a>
+            </li>
+            <li class="tuhina-gallery-item">
+              <a class="tuhina-gallery-card" aria-label="Storyboard">
+                <img src="assets/tuhina-gallery/storyboard.png" alt="Storyboard preview" />
+                <span class="tuhina-gallery-label">Storyboard</span>
+              </a>
+            </li>
+
+            <li class="tuhina-gallery-item" aria-hidden="true">
+              <a class="tuhina-gallery-card" tabindex="-1">
+                <img src="assets/tuhina-gallery/website-ui.png" alt="" />
+                <span class="tuhina-gallery-label">Website UI</span>
+              </a>
+            </li>
+            <li class="tuhina-gallery-item" aria-hidden="true">
+              <a class="tuhina-gallery-card" tabindex="-1">
+                <img src="assets/tuhina-gallery/brand-playbook.png" alt="" />
+                <span class="tuhina-gallery-label">Brand Playbook</span>
+              </a>
+            </li>
+            <li class="tuhina-gallery-item" aria-hidden="true">
+              <a class="tuhina-gallery-card" tabindex="-1">
+                <img src="assets/tuhina-gallery/branding.jpg" alt="" />
+                <span class="tuhina-gallery-label">Branding</span>
+              </a>
+            </li>
+            <li class="tuhina-gallery-item" aria-hidden="true">
+              <a class="tuhina-gallery-card" tabindex="-1">
+                <img src="assets/tuhina-gallery/merch-design.png" alt="" />
+                <span class="tuhina-gallery-label">Merch Design</span>
+              </a>
+            </li>
+            <li class="tuhina-gallery-item" aria-hidden="true">
+              <a class="tuhina-gallery-card" tabindex="-1">
+                <img src="assets/tuhina-gallery/sneaker-design.png" alt="" />
+                <span class="tuhina-gallery-label">Sneaker design</span>
+              </a>
+            </li>
+            <li class="tuhina-gallery-item" aria-hidden="true">
+              <a class="tuhina-gallery-card" tabindex="-1">
+                <img src="assets/tuhina-gallery/ad-campaign.png" alt="" />
+                <span class="tuhina-gallery-label">Ad Campaign</span>
+              </a>
+            </li>
+            <li class="tuhina-gallery-item" aria-hidden="true">
+              <a class="tuhina-gallery-card" tabindex="-1">
+                <img src="assets/tuhina-gallery/social-media.png" alt="" />
+                <span class="tuhina-gallery-label">Social Media Posts</span>
+              </a>
+            </li>
+            <li class="tuhina-gallery-item" aria-hidden="true">
+              <a class="tuhina-gallery-card" tabindex="-1">
+                <img src="assets/tuhina-gallery/packaging.jpg" alt="" />
+                <span class="tuhina-gallery-label">Packaging</span>
+              </a>
+            </li>
+            <li class="tuhina-gallery-item" aria-hidden="true">
+              <a class="tuhina-gallery-card" tabindex="-1">
+                <img src="assets/tuhina-gallery/storyboard.png" alt="" />
+                <span class="tuhina-gallery-label">Storyboard</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section> -->
+
+      <section class="project-action-section" id="works" aria-label="Selected design work">
+        <div class="project-action-inner">
+          <header class="project-action-header">
+            <p class="project-action-eyebrow">
+              <img src="assets/icons/phosphor-star-four-fill.svg" alt="" aria-hidden="true" />
+              <span>Selected work</span>
+            </p>
+            <h2>Check out some of my work</h2>
+            <p class="project-action-subtitle">A few products I've helped shape, and the thinking behind them.</p>
+          </header>
+
+          <div class="project-action-cards">
+            <article class="action-card-shell" data-action-card>
+              <a class="action-card" href="https://www.behance.net/gallery/253207765/Mandate?platform=direct" target="_blank" rel="noreferrer">
+                <div class="action-card-copy">
+                  <div class="action-card-text">
+                    <h3>Mandate</h3>
+                    <p>A financial control layer that makes AI-agent permissions, lending decisions and money movement visible before they happen.</p>
+                  </div>
+                  <div class="action-card-tags" aria-label="Project tags">
+                    <span>FinTech</span>
+                    <span>Product Design</span>
+                  </div>
+                </div>
+                <div class="action-card-image">
+                  <img src="assets/tuhina-reference/juspay-genius.png" alt="Mandate project preview" />
+                </div>
+              </a>
+            </article>
+
+            <article class="action-card-shell" data-action-card>
+              <a class="action-card" href="https://www.behance.net/gallery/251783839/Skill-Swap-Learning-Platform-Product-Design?platform=direct" target="_blank" rel="noreferrer">
+                <div class="action-card-copy">
+                  <div class="action-card-text">
+                    <h3>SkillSwap</h3>
+                    <p>A peer-to-peer learning platform for exchanging skills, matching mentors and building trust through a credit-based system.</p>
+                  </div>
+                  <div class="action-card-tags" aria-label="Project tags">
+                    <span>EdTech</span>
+                    <span>Case Study</span>
+                  </div>
+                </div>
+                <div class="action-card-image">
+                  <img src="assets/skillswap-cover-upload.png" alt="SkillSwap project preview" />
+                </div>
+              </a>
+            </article>
+
+            <article class="action-card-shell" data-action-card>
+              <a class="action-card" href="https://www.behance.net/gallery/252505921/Google-Pay-Redesign-for-Elderly-and-First-Time-Users?platform=direct" target="_blank" rel="noreferrer">
+                <div class="action-card-copy">
+                  <div class="action-card-text">
+                    <h3>Google Pay Redesign</h3>
+                    <p>A safer payment experience concept for elderly and first-time users with clearer flows, guidance and confidence-building actions.</p>
+                  </div>
+                  <div class="action-card-tags" aria-label="Project tags">
+                    <span>FinTech</span>
+                    <span>UX Redesign</span>
+                  </div>
+                </div>
+                <div class="action-card-image">
+                  <img src="assets/google-pay-redesign-cover.png" alt="Google Pay redesign project preview" />
+                </div>
+              </a>
+            </article>
+
+            <article class="action-card-shell" data-action-card>
+              <a class="action-card" href="https://www.behance.net/gallery/253085727/PaySlate-Freelancer-Invoice-Payment-Dashboard?platform=direct" target="_blank" rel="noreferrer">
+                <div class="action-card-copy">
+                  <div class="action-card-text">
+                    <h3>PaySlate</h3>
+                    <p>An all-in-one finance dashboard for invoices, payments, clients, expenses and business performance.</p>
+                  </div>
+                  <div class="action-card-tags" aria-label="Project tags">
+                    <span>Dashboard</span>
+                    <span>Product Design</span>
+                  </div>
+                </div>
+                <div class="action-card-image">
+                  <img src="assets/payslate-product-cover.png" alt="PaySlate dashboard project preview" />
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="my-process-section" id="my-process" aria-labelledby="my-process-title" data-process-section>
+        <div class="my-process-sticky">
+          <header class="my-process-header">
+            <p class="my-process-label"><span aria-hidden="true"></span>Design process</p>
+          <h2 id="my-process-title">Journey from idea to impact</h2>
+            <p class="my-process-subtitle">
+              A thoughtful path from understanding the real problem to shaping, testing and delivering a product people can use with confidence.
+            </p>
+          </header>
+
+          <div class="my-process-viewport">
+            <div class="my-process-track" data-process-track>
+              <article class="process-card-slot process-card-slot--top" style="--card-y: 82px; --card-rotation: 2deg; --card-index: 0;">
+                <span class="process-step-marker">01</span>
+                <div class="process-stage-card">
+                  <header class="process-card-header">
+                    <span class="process-card-icon" aria-hidden="true">
+                      <img src="https://api.iconify.design/lucide:search.svg?color=%23000000" alt="" width="25" height="25" />
+                    </span>
+                    <div>
+                      <p>Stage 01</p>
+                      <h3>Research &amp; Synthesis</h3>
+                    </div>
+                  </header>
+                  <div class="process-card-body">
+                    <strong>Understand the problem before designing.</strong>
+                    <p>I study users, business goals and the wider product context, then organise the findings into clear insights and opportunities.</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="process-card-slot process-card-slot--bottom" style="--card-y: 6px; --card-rotation: -2deg; --card-index: 1;">
+                <span class="process-step-marker">02</span>
+                <div class="process-stage-card">
+                  <header class="process-card-header">
+                    <span class="process-card-icon" aria-hidden="true">
+                      <img src="https://api.iconify.design/lucide:list-filter.svg?color=%23000000" alt="" width="25" height="25" />
+                    </span>
+                    <div>
+                      <p>Stage 02</p>
+                      <h3>Prioritise &amp; Define</h3>
+                    </div>
+                  </header>
+                  <div class="process-card-body">
+                    <strong>Decide what matters most.</strong>
+                    <p>I align user needs with business priorities, define the product direction and create focused user flows before moving into design.</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="process-card-slot process-card-slot--top" style="--card-y: 94px; --card-rotation: 1deg; --card-index: 2;">
+                <span class="process-step-marker">03</span>
+                <div class="process-stage-card">
+                  <header class="process-card-header">
+                    <span class="process-card-icon" aria-hidden="true">
+                      <img src="https://api.iconify.design/lucide:pen-tool.svg?color=%23000000" alt="" width="25" height="25" />
+                    </span>
+                    <div>
+                      <p>Stage 03</p>
+                      <h3>Design &amp; Prototype</h3>
+                    </div>
+                  </header>
+                  <div class="process-card-body">
+                    <strong>Turn direction into an experience.</strong>
+                    <p>I create wireframes, interface systems and interactive prototypes to explore ideas and make the experience clear, usable and consistent.</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="process-card-slot process-card-slot--bottom" style="--card-y: 10px; --card-rotation: -1deg; --card-index: 3;">
+                <span class="process-step-marker">04</span>
+                <div class="process-stage-card">
+                  <header class="process-card-header">
+                    <span class="process-card-icon" aria-hidden="true">
+                      <img src="https://api.iconify.design/lucide:scan-search.svg?color=%23000000" alt="" width="25" height="25" />
+                    </span>
+                    <div>
+                      <p>Stage 04</p>
+                      <h3>Test &amp; Iterate</h3>
+                    </div>
+                  </header>
+                  <div class="process-card-body">
+                    <strong>Validate before finalising.</strong>
+                    <p>I test ideas with users and stakeholders, identify friction and refine the design using real feedback.</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="process-card-slot process-card-slot--top" style="--card-y: 72px; --card-rotation: 1.5deg; --card-index: 4;">
+                <span class="process-step-marker">05</span>
+                <div class="process-stage-card">
+                  <header class="process-card-header">
+                    <span class="process-card-icon" aria-hidden="true">
+                      <img src="https://api.iconify.design/lucide:chart-no-axes-combined.svg?color=%23000000" alt="" width="25" height="25" />
+                    </span>
+                    <div>
+                      <p>Stage 05</p>
+                      <h3>Deliver &amp; Measure</h3>
+                    </div>
+                  </header>
+                  <div class="process-card-body">
+                    <strong>Support the product beyond the design file.</strong>
+                    <p>I collaborate with developers, review implementation and use feedback and product outcomes to improve the experience after launch.</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services-roll-section" id="services-roll" aria-label="Services I offer">
+        <div class="services-roll-inner">
+          <p class="services-roll-kicker">What I Can Do</p>
+
+          <div class="services-roll-list" aria-label="Design services">
+            <div class="services-roll-row" role="button" tabindex="0" data-preview-index="0" aria-label="User Research - hover to view image">
+              <span class="services-roll-window">
+                <span class="services-roll-stack">
+                  <span>User Research</span>
+                  <span aria-hidden="true">User Research</span>
+                </span>
+              </span>
+            </div>
+
+            <div class="services-roll-row" role="button" tabindex="0" data-preview-index="1" aria-label="UX/UI Design - hover to view image">
+              <span class="services-roll-window">
+                <span class="services-roll-stack">
+                  <span>UX/UI Design</span>
+                  <span aria-hidden="true">UX/UI Design</span>
+                </span>
+              </span>
+            </div>
+
+            <div class="services-roll-row" role="button" tabindex="0" data-preview-index="2" aria-label="Website Design - hover to view image">
+              <span class="services-roll-window">
+                <span class="services-roll-stack">
+                  <span>Website Design</span>
+                  <span aria-hidden="true">Website Design</span>
+                </span>
+              </span>
+            </div>
+
+            <div class="services-roll-row" role="button" tabindex="0" data-preview-index="3" aria-label="Brand Identity - hover to view image">
+              <span class="services-roll-window">
+                <span class="services-roll-stack">
+                  <span>Brand Identity</span>
+                  <span aria-hidden="true">Brand Identity</span>
+                </span>
+              </span>
+            </div>
+
+            <div class="services-roll-row" role="button" tabindex="0" data-preview-index="4" aria-label="Graphic Design - hover to view image">
+              <span class="services-roll-window">
+                <span class="services-roll-stack">
+                  <span>Graphic Design</span>
+                  <span aria-hidden="true">Graphic Design</span>
+                </span>
+              </span>
+            </div>
+          </div>
+
+          <div class="services-roll-preview" aria-hidden="true">
+            <div class="services-roll-preview-track">
+              <div class="services-roll-preview-panel">
+                <img src="assets/charn-services/user-research.png" alt="" draggable="false" />
+              </div>
+              <div class="services-roll-preview-panel">
+                <img src="assets/charn-services/ux-ui-design.png" alt="" draggable="false" />
+              </div>
+              <div class="services-roll-preview-panel">
+                <img src="assets/charn-services/website-design.png" alt="" draggable="false" />
+              </div>
+              <div class="services-roll-preview-panel">
+                <img src="assets/tuhina-gallery/branding.jpg" alt="" draggable="false" />
+              </div>
+              <div class="services-roll-preview-panel">
+                <img src="assets/charn-services/graphic-design.png" alt="" draggable="false" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="horizontal-words" id="rolling-effect" aria-label="Rolling design statement">
+        <div class="horizontal-words__content">
+          <div class="horizontal-words__relative">
+            <h2 class="display horizontal-words__h2">Every great design begins with understanding.</h2>
+
+            <div class="horizontal-words__sticker-watch" aria-hidden="true">
+              <img
+                src="assets/truus-reference/sticker-watch.svg"
+                alt=""
+                class="horizontal-words__sticker-svg"
+                draggable="false"
+              />
+            </div>
+
+            <div class="horizontal-words__sticker-cursor" aria-hidden="true">
+              <img
+                src="assets/truus-reference/sticker-cursor.svg"
+                alt=""
+                class="horizontal-words__sticker-svg"
+                draggable="false"
+              />
+            </div>
+
+            <div class="horizontal-words__sticker-phone" aria-hidden="true">
+              <img
+                src="assets/truus-reference/sticker-phone.svg"
+                alt=""
+                class="horizontal-words__sticker-svg"
+                draggable="false"
+              />
+            </div>
+
+            <svg
+              class="horizontal-words__arrow-end-svg horizontal-words__draw-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              viewBox="0 0 140 127"
+              fill="none"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                d="M2.03125 2.42188C100.469 2.42188 130.156 52.4219 118.437 125.078L99.6875 107.891"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M2.03125 2.42188C100.469 2.42188 130.156 52.4219 118.438 125.078L137.969 110.234"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+
+            <svg
+              class="horizontal-words__arrow-svg horizontal-words__draw-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              viewBox="0 0 386 127"
+              fill="none"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                d="M2 123C9 35.9999 84.5 17 124 25.9999C217.764 47.3635 207 115 177.5 123C105.777 142.45 110.737 1.99991 232.5 2C310.5 2.00006 366.5 79 376 118L356.5 105.5"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M2 123C9 35.9999 84.5 17 124 25.9999C217.764 47.3635 207 115 177.5 123C105.777 142.45 110.737 1.99991 232.5 2C310.5 2.00006 366.5 79 376 118L384 97"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </div>
+
+          <div class="horizontal-words__bottom-text">
+            <p class="horizontal-words__bottom-text-l">
+              Every thoughtful product begins with understanding people. I turn their needs into clear flows,
+              intuitive interfaces, and meaningful visual experiences.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="home-whatsapp-cta" aria-label="Start a WhatsApp conversation">
+        <a
+          class="arjuna-call-button"
+          href="https://wa.me/919061208012?text=Hi%20Aami%2C%20I%27d%20like%20to%20chat%20about%20a%20design%20project."
+          target="_blank"
+          rel="noopener noreferrer"
+          data-whatsapp-cta
+        >
+          <span class="arjuna-call-button__bg" aria-hidden="true"></span>
+          <span class="arjuna-call-button__label">Chat on WhatsApp</span>
+          <span class="arjuna-call-button__hover" aria-hidden="true">
+            <span class="arjuna-call-button__avatar">
+              <img src="assets/about-aami-cutout.png" alt="" />
+            </span>
+            <span class="arjuna-call-button__plus">+</span>
+            <span class="arjuna-call-button__you">You</span>
+            <span class="arjuna-call-button__closing">Let&rsquo;s chat!</span>
+          </span>
+        </a>
+      </div>
+
+      <section class="aami-arcade" id="aami-arcade" aria-label="Aami Arcade">
+        <div class="aami-game" data-aami-game tabindex="0">
+          <canvas data-pixel-game-canvas aria-label="An endless pixel platform game"></canvas>
+        </div>
+      </section>
+
+    </main>
+
+    <script src="assets/vendor/matter.min.js"></script>
+    <script src="script.js?v=126"></script>
+    <script src="aami-game.js?v=2"></script>
+  </body>
+</html>

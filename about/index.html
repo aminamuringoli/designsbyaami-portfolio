@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/desktop-preview.js?v=3"></script>
+    <meta
+      name="description"
+      content="About Aami, a product and visual designer creating thoughtful digital experiences and memorable identities."
+    />
+    <title>About Aami - Designsbyami</title>
+    <script>
+      (() => {
+        try {
+          const savedTheme = localStorage.getItem("amina-theme");
+          document.documentElement.dataset.theme = savedTheme === "dark" || savedTheme === "light" ? savedTheme : "light";
+        } catch {
+          document.documentElement.dataset.theme = "light";
+        }
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=DM+Sans:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&family=Jost:wght@300;400;500;600&family=Just+Another+Hand&family=Unbounded:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="/assets/user-stickers/designsbyaami-logo-header.png" />
+    <link rel="stylesheet" href="/styles.css?v=214" />
+  </head>
+  <body class="about-page">
+    <a class="skip-link" href="#about-page">Skip to About Aami</a>
+
+    <canvas class="gradient-flow-bg" data-gradient-flow aria-hidden="true"></canvas>
+
+    <button class="hero-theme-toggle shared-theme-toggle" id="theme-lamp" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+      <span class="hero-theme-toggle__track" aria-hidden="true"><span></span></span>
+      <span class="hero-theme-toggle__label">Dark</span>
+    </button>
+
+    <header class="site-navbar" aria-label="Primary navigation">
+      <nav class="site-navbar__pill">
+        <a class="site-navbar__brand" href="/" aria-label="Designs by Aami — Home">
+          <img src="/assets/user-stickers/designsbyaami-logo-header.png" alt="Designs by Aami" />
+        </a>
+        <span class="site-navbar__indicator" aria-hidden="true"></span>
+        <a href="/" class="site-navbar__link"><img class="site-navbar__icon" src="/assets/icons/lucide-home.svg" alt="" aria-hidden="true" /><span>Home</span></a>
+        <a
+          href="/about/"
+          class="site-navbar__link is-active"
+          data-nav-section="about-page"
+          aria-current="page"
+        ><img class="site-navbar__icon" src="/assets/icons/lucide-user.svg" alt="" aria-hidden="true" /><span>About</span></a>
+        <a href="/works/" class="site-navbar__link"><img class="site-navbar__icon" src="/assets/icons/lucide-briefcase.svg" alt="" aria-hidden="true" /><span>Works</span></a>
+        <a href="/resume/" class="site-navbar__link"><img class="site-navbar__icon" src="/assets/icons/lucide-file-text.svg" alt="" aria-hidden="true" /><span>Resume</span></a>
+        <a href="/contact/" class="site-navbar__link"><img class="site-navbar__icon" src="/assets/icons/lucide-message.svg" alt="" aria-hidden="true" /><span>Contact</span></a>
+      </nav>
+    </header>
+
+    <main class="about-page-main">
+      <section class="about-page-hero" id="about-page" aria-labelledby="about-page-title">
+        <div class="about-intro-layout">
+          <div class="about-intro-portrait-column">
+            <figure class="about-intro-photo-frame">
+              <img src="/assets/about-cafe-photo.jpeg" alt="Aami working on a laptop in a cafe" />
+            </figure>
+            <p class="about-intro-handwriting" aria-label="Hi, I'm Aami, nice to e-meet you!">
+              <span>Hi I&rsquo;m Aami,</span>
+              <span>nice to e-meet you!!</span>
+              <span>&lt;3</span>
+            </p>
+          </div>
+
+          <article class="about-intro-copy">
+            <h1 id="about-page-title">
+              I like turning complicated ideas into
+              <em>thoughtful, memorable experiences!</em>
+            </h1>
+            <div class="about-intro-body">
+              <p class="about-intro-lede">Which sounds simple, until you&rsquo;ve met a truly tangled product.</p>
+              <p>
+                I&rsquo;m Aami, a Product Designer and UI/UX Designer. I spend my time understanding people,
+                untangling workflows, shaping digital products, and building visual identities that balance user needs,
+                business goals and thoughtful detail.
+              </p>
+              <p>
+                When I&rsquo;m not designing, I&rsquo;m probably collecting inspiration, experimenting with a new visual idea,
+                or learning one more way to make complex things feel clear and human.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="about-tool-stack-section" aria-label="Tool stack">
+        <ul class="about-tool-stack-dock" aria-label="Design and build tools">
+          <li class="about-tool-stack-icon" title="Figma">
+            <span class="about-tool-stack-rounded"><img src="/assets/app-icons/figma.webp" alt="Figma" /></span>
+          </li>
+          <li class="about-tool-stack-icon" title="Photoshop">
+            <img src="/assets/app-icons/photoshop.svg" alt="Photoshop" />
+          </li>
+          <li class="about-tool-stack-icon" title="Sketch">
+            <span class="about-tool-stack-rounded"><img src="/assets/app-icons/sketch.webp" alt="Sketch" /></span>
+          </li>
+          <li class="about-tool-stack-icon" title="Illustrator">
+            <img src="/assets/app-icons/illustrator.svg" alt="Illustrator" />
+          </li>
+          <li class="about-tool-stack-icon" title="Lovable">
+            <span class="about-tool-stack-rounded"><img src="/assets/app-icons/lovable.webp" alt="Lovable" /></span>
+          </li>
+          <li class="about-tool-stack-icon" title="XD">
+            <img src="/assets/app-icons/xd.svg" alt="XD" />
+          </li>
+          <li class="about-tool-stack-icon" title="Gemini">
+            <span class="about-tool-stack-rounded"><img src="/assets/app-icons/gemini.webp" alt="Gemini" /></span>
+          </li>
+          <li class="about-tool-stack-icon" title="ChatGPT">
+            <span class="about-tool-stack-rounded"><img src="/assets/app-icons/chatgpt.webp" alt="ChatGPT" /></span>
+          </li>
+          <li class="about-tool-stack-icon" title="Claude">
+            <span class="about-tool-stack-rounded"><img src="/assets/app-icons/claude.webp" alt="Claude" /></span>
+          </li>
+          <li class="about-tool-stack-icon" title="CorelDraw">
+            <span class="about-tool-stack-rounded"><img src="/assets/app-icons/coreldraw.webp" alt="CorelDraw" /></span>
+          </li>
+          <li class="about-tool-stack-icon" title="After Effects">
+            <img src="/assets/app-icons/after-effects.svg" alt="After Effects" />
+          </li>
+          <li class="about-tool-stack-icon" title="Premiere Pro">
+            <img src="/assets/app-icons/premiere-pro.svg" alt="Premiere Pro" />
+          </li>
+        </ul>
+      </section>
+
+      <section class="career-highlights-section" aria-labelledby="career-highlights-title">
+        <div class="career-highlights-inner">
+          <div class="career-highlights-layout">
+            <figure class="career-highlights-photo">
+              <img src="/assets/about-kmct-campus-cropped.png" alt="Aami standing outside KMCT College of Engineering" />
+            </figure>
+
+            <div class="career-highlights-details">
+              <img class="career-highlights-cap" src="/assets/career-graduate.webp" alt="" aria-hidden="true" />
+              <div class="career-highlights-heading">
+                <h2 id="career-highlights-title">KMCT College of Engineering</h2>
+                <p>Bachelor of Technology in Computer Science</p>
+                <p>Product and UI/UX design focus</p>
+              </div>
+
+              <dl class="career-highlights-metrics">
+                <div>
+                  <dt>Selected projects</dt>
+                  <dd>04</dd>
+                </div>
+                <div>
+                  <dt>Design &amp; build skills</dt>
+                  <dd>12+</dd>
+                </div>
+              </dl>
+
+              <ul class="career-highlights-list">
+                <li>Designed a clearer product comparison flow for Price Panda</li>
+                <li>Created a complete identity and packaging system for a conceptual cafe</li>
+                <li>Led visual media and live coverage for the three-day Karma 25 festival</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-wall-section" aria-label="Highlights and achievements">
+        <div class="home-wall-layout">
+          <article class="home-wall-story">
+            <img class="home-wall-story__icon" src="/assets/spiral-notepad-icon.svg" alt="Spiral notepad" />
+            <p>Most of my ideas begin with notes, curiosity, and experimentation.</p>
+            <img
+              class="home-wall-story__image home-wall-story__image--notes"
+              src="/assets/home-ideas-notes.png"
+              alt="Design notes and photography experimentation across a desk"
+            />
+          </article>
+
+          <article class="home-wall-story">
+            <img
+              class="home-wall-story__image home-wall-story__image--award"
+              src="/assets/home-creative-leadership.png"
+              alt="Aami receiving an award at Karma 25"
+            />
+            <p>Creative leadership became an important part of my journey.</p>
+            <img class="home-wall-story__icon" src="/assets/enric-wall/trophy.webp" alt="Trophy" />
+          </article>
+
+          <aside class="home-wall-fame" aria-label="Wall of fame">
+            <div class="home-wall-fame__stage">
+              <img
+                class="home-wall-fame__art"
+                src="/assets/enric-wall/three.webp"
+                alt="Graphic Design, UI/UX Design, and Brand Identity"
+              />
+
+              <div class="home-wall-stat home-wall-stat--experience">
+                <strong>02+</strong>
+                <span>Years exploring design</span>
+              </div>
+
+              <div class="home-wall-stat home-wall-stat--projects">
+                <strong>10+</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="about-journey-section" aria-labelledby="about-journey-title">
+        <div class="about-journey-inner">
+          <div class="about-journey-content">
+            <div class="about-journey-story">
+              <h2 id="about-journey-title">
+                Started in Computer Science.
+                <span>Design became how I solve problems.</span>
+              </h2>
+              <p>
+                While completing my B.Tech, I developed a strong interest in creating digital experiences that are
+                clear, useful, and visually engaging. Today, I work across UI/UX design, graphic design, branding,
+                wireframing, and prototyping&mdash;combining technical understanding with user-centred design thinking.
+              </p>
+            </div>
+
+            <div class="about-experience-list" aria-label="Experience">
+              <article class="about-experience-row">
+                <div>
+                  <h3>Freelance</h3>
+                  <p>UI/UX &amp; Graphic Designer</p>
+                </div>
+                <time datetime="2024">2024 &ndash; Present</time>
+              </article>
+
+              <article class="about-experience-row">
+                <div>
+                  <h3>Karma &rsquo;25, KMCT College of Engineering</h3>
+                  <p>Media Convenor</p>
+                </div>
+                <time datetime="2026">2026</time>
+              </article>
+
+              <article class="about-experience-row">
+                <div>
+                  <h3>Accenture North America</h3>
+                  <p>Product Design Job Simulation</p>
+                </div>
+                <time datetime="2025">2025</time>
+              </article>
+
+              <article class="about-experience-row">
+                <div>
+                  <h3>Lloyds Banking Group</h3>
+                  <p>UX Design Job Simulation</p>
+                </div>
+                <time datetime="2025">2025</time>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="behind-pixels-section" id="behind-pixels" aria-label="Behind the Pixels">
+        <div class="behind-pixels-inner">
+          <div class="behind-pixels-fan" data-behind-pixels-fan aria-label="Behind the scenes cards">
+            <button
+              class="behind-pixels-card"
+              type="button"
+              aria-label="Behind the scenes card 1"
+              style="--x: -360px; --y: 108px; --r: -36deg; --s: 0.82; --z: 17; --hover-x: -18px;"
+            >
+              <img src="/assets/behind-pixels/aami-01.png" alt="" draggable="false" style="object-position: center 50%;" />
+            </button>
+            <button
+              class="behind-pixels-card"
+              type="button"
+              aria-label="Behind the scenes card 2"
+              style="--x: -240px; --y: 48px; --r: -24deg; --s: 0.88; --z: 18; --hover-x: -12px;"
+            >
+              <img src="/assets/behind-pixels/aami-02.png" alt="" draggable="false" style="object-position: center 58%;" />
+            </button>
+            <button
+              class="behind-pixels-card"
+              type="button"
+              aria-label="Behind the scenes card 3"
+              style="--x: -120px; --y: 12px; --r: -12deg; --s: 0.94; --z: 19; --hover-x: -6px;"
+            >
+              <img src="/assets/behind-pixels/aami-03.png" alt="" draggable="false" style="object-position: center 48%;" />
+            </button>
+            <button
+              class="behind-pixels-card"
+              type="button"
+              aria-label="Behind the scenes card 4"
+              style="--x: 0px; --y: 0px; --r: 0deg; --s: 1; --z: 20; --hover-x: 0px;"
+            >
+              <img src="/assets/behind-pixels/aami-card-04-beach.jpeg" alt="" draggable="false" style="object-position: center 56%;" />
+            </button>
+            <button
+              class="behind-pixels-card"
+              type="button"
+              aria-label="Behind the scenes card 5"
+              style="--x: 120px; --y: 12px; --r: 12deg; --s: 0.94; --z: 19; --hover-x: 6px;"
+            >
+              <img src="/assets/behind-pixels/aami-05.png" alt="" draggable="false" style="object-position: center 50%;" />
+            </button>
+            <button
+              class="behind-pixels-card"
+              type="button"
+              aria-label="Behind the scenes card 6"
+              style="--x: 240px; --y: 48px; --r: 24deg; --s: 0.88; --z: 18; --hover-x: 12px;"
+            >
+              <img src="/assets/behind-pixels/aami-06.png" alt="" draggable="false" style="object-position: center 58%;" />
+            </button>
+            <button
+              class="behind-pixels-card"
+              type="button"
+              aria-label="Behind the scenes card 7"
+              style="--x: 360px; --y: 108px; --r: 36deg; --s: 0.82; --z: 17; --hover-x: 18px;"
+            >
+              <img src="/assets/behind-pixels/aami-card-07-group.png" alt="" draggable="false" style="object-position: center 58%;" />
+            </button>
+          </div>
+
+          <div class="behind-pixels-copy">
+            <h2>Behind the Pixels</h2>
+            <p>A soft little archive of experiments, tiny details, textures, and moments that shape the work.</p>
+          </div>
+
+          <div
+            class="behind-pixels-marquee"
+            id="fun-stuff"
+            data-fun-marquee
+            aria-label="Fun stuff: music, poems, movies, photography, and side projects"
+          >
+            <div class="behind-pixels-marquee__track" data-fun-marquee-track>
+              <div class="behind-pixels-marquee__tile is-featured" data-fun-tile style="--tile-width: 150px">
+                <img src="https://api.iconify.design/lucide:smile.svg" alt="" />
+              </div>
+              <div class="behind-pixels-marquee__tile" data-fun-tile style="--tile-width: 96px">
+                <img src="https://api.iconify.design/lucide:heart.svg" alt="" />
+              </div>
+              <div class="behind-pixels-marquee__tile" data-fun-tile style="--tile-width: 128px">
+                <img src="https://api.iconify.design/lucide:star.svg" alt="" />
+              </div>
+              <div class="behind-pixels-marquee__tile" data-fun-tile style="--tile-width: 168px">
+                <img src="https://api.iconify.design/lucide:meh.svg" alt="" />
+              </div>
+              <div class="behind-pixels-marquee__tile" data-fun-tile style="--tile-width: 108px">
+                <img src="https://api.iconify.design/lucide:music-2.svg" alt="" />
+              </div>
+              <div class="behind-pixels-marquee__tile" data-fun-tile style="--tile-width: 140px">
+                <img src="https://api.iconify.design/lucide:camera.svg" alt="" />
+              </div>
+              <div class="behind-pixels-marquee__tile" data-fun-tile style="--tile-width: 116px">
+                <img src="https://api.iconify.design/lucide:moon.svg" alt="" />
+              </div>
+              <div class="behind-pixels-marquee__tile" data-fun-tile style="--tile-width: 160px">
+                <img src="https://api.iconify.design/lucide:zap.svg" alt="" />
+              </div>
+            </div>
+            <div class="behind-pixels-marquee__fade behind-pixels-marquee__fade--left" aria-hidden="true"></div>
+            <div class="behind-pixels-marquee__fade behind-pixels-marquee__fade--right" aria-hidden="true"></div>
+          </div>
+
+          <div class="about-fun-grid behind-pixels-fun-grid" aria-label="Off-screen interests">
+            <article class="about-fun-card">
+              <div class="about-fun-card__top">
+                <span class="about-fun-icon" aria-hidden="true">
+                  <img src="https://api.iconify.design/lucide:mic-2.svg" alt="" />
+                </span>
+              </div>
+              <div>
+                <h3>Music</h3>
+                <p>Playlists and songs that keep long design sessions moving.</p>
+              </div>
+            </article>
+
+            <article class="about-fun-card">
+              <div class="about-fun-card__top">
+                <span class="about-fun-icon" aria-hidden="true">
+                  <img src="https://api.iconify.design/lucide:bookmark.svg" alt="" />
+                </span>
+              </div>
+              <div>
+                <h3>Poems</h3>
+                <p>Small thoughts and words that tend to arrive uninvited.</p>
+              </div>
+            </article>
+
+            <article class="about-fun-card">
+              <div class="about-fun-card__top">
+                <span class="about-fun-icon" aria-hidden="true">
+                  <img src="https://api.iconify.design/lucide:film.svg" alt="" />
+                </span>
+              </div>
+              <div>
+                <h3>Movies</h3>
+                <p>Stories, frames, and visual moments worth returning to.</p>
+              </div>
+            </article>
+
+            <article class="about-fun-card">
+              <div class="about-fun-card__top">
+                <span class="about-fun-icon" aria-hidden="true">
+                  <img src="https://api.iconify.design/lucide:layers-3.svg" alt="" />
+                </span>
+              </div>
+              <div>
+                <h3>Side Projects</h3>
+                <p>Tiny builds and experiments made between everything else.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-questions-section" aria-labelledby="about-questions-title">
+        <div class="about-questions-inner">
+          <h2 id="about-questions-title">Your Questions. Answered</h2>
+
+          <div class="imessage-shell" data-imessage-faq>
+            <div class="imessage-device-screen">
+              <div class="imessage-statusbar" aria-hidden="true">
+                <strong>9:41</strong>
+                <div class="imessage-statusbar__icons">
+                  <img src="https://api.iconify.design/lucide:wifi.svg" alt="" />
+                  <span>100%</span>
+                  <img src="https://api.iconify.design/lucide:battery-full.svg" alt="" />
+                </div>
+              </div>
+
+              <div class="imessage-app">
+                <aside class="imessage-sidebar" aria-label="Questions for Aami">
+                  <div class="imessage-sidebar-toolbar">
+                    <button type="button" aria-label="Filter messages">
+                      <img src="https://api.iconify.design/lucide:chevron-down.svg" alt="" />
+                    </button>
+                    <strong>Messages</strong>
+                    <button type="button" aria-label="Compose a message">
+                      <img src="https://api.iconify.design/lucide:square-pen.svg" alt="" />
+                    </button>
+                  </div>
+                  <div class="imessage-search" aria-hidden="true">
+                    <img src="https://api.iconify.design/lucide:search.svg" alt="" />
+                    <span>Search</span>
+                  </div>
+
+                  <div class="imessage-thread">
+                    <article class="imessage-exchange is-open">
+                      <button class="imessage-question" type="button" aria-expanded="true" aria-controls="aami-answer-1">
+                        <span class="imessage-question__avatar">A</span>
+                        <span class="imessage-question__copy">
+                          <strong>Opportunities</strong>
+                          <span>What kind of opportunities are you open to?</span>
+                        </span>
+                        <time datetime="2026-07-24T09:41">9:41 AM</time>
+                      </button>
+                    </article>
+
+                    <article class="imessage-exchange">
+                      <button class="imessage-question" type="button" aria-expanded="false" aria-controls="aami-answer-2">
+                        <span class="imessage-question__avatar">P</span>
+                        <span class="imessage-question__copy">
+                          <strong>Products</strong>
+                          <span>What kind of products do you enjoy designing?</span>
+                        </span>
+                        <time datetime="2026-07-24T09:39">9:39 AM</time>
+                      </button>
+                    </article>
+
+                    <article class="imessage-exchange">
+                      <button class="imessage-question" type="button" aria-expanded="false" aria-controls="aami-answer-3">
+                        <span class="imessage-question__avatar">G</span>
+                        <span class="imessage-question__copy">
+                          <strong>Good design</strong>
+                          <span>What does good design work look like to you?</span>
+                        </span>
+                        <time datetime="2026-07-24T09:35">9:35 AM</time>
+                      </button>
+                    </article>
+
+                    <article class="imessage-exchange">
+                      <button class="imessage-question" type="button" aria-expanded="false" aria-controls="aami-answer-4">
+                        <span class="imessage-question__avatar">C</span>
+                        <span class="imessage-question__copy">
+                          <strong>Code &amp; craft</strong>
+                          <span>Can you work with code too?</span>
+                        </span>
+                        <time datetime="2026-07-24T09:32">9:32 AM</time>
+                      </button>
+                    </article>
+
+                    <article class="imessage-exchange">
+                      <button class="imessage-question" type="button" aria-expanded="false" aria-controls="aami-answer-5">
+                        <span class="imessage-question__avatar">@</span>
+                        <span class="imessage-question__copy">
+                          <strong>Contact</strong>
+                          <span>How can I reach you?</span>
+                        </span>
+                        <time datetime="2026-07-24T09:30">9:30 AM</time>
+                      </button>
+                    </article>
+                  </div>
+                </aside>
+
+                <section class="imessage-conversation" aria-label="Conversation with Aami">
+                  <header class="imessage-header">
+                    <span class="imessage-back" aria-hidden="true">&lsaquo; <b>5</b></span>
+                    <div class="imessage-contact">
+                      <img src="/assets/about-amina-photo.jpeg" alt="" aria-hidden="true" />
+                      <span>Aami <b aria-hidden="true">&rsaquo;</b></span>
+                    </div>
+                    <button type="button" aria-label="Start a video call">
+                      <img src="https://api.iconify.design/lucide:video.svg" alt="" />
+                    </button>
+                  </header>
+
+                  <div class="imessage-chat-log" aria-live="polite">
+                    <div class="imessage-answer" id="aami-answer-1">
+                      <time datetime="2026-07-24T09:41">Today 9:41 AM</time>
+                      <p class="imessage-bubble imessage-bubble--incoming">What kind of opportunities are you open to?</p>
+                      <p class="imessage-bubble imessage-bubble--outgoing">I&rsquo;m open to product design and UI/UX roles, along with selective freelance projects where the problem is worth untangling.</p>
+                      <span class="imessage-delivery">Delivered</span>
+                    </div>
+                    <div class="imessage-answer" id="aami-answer-2" hidden>
+                      <time datetime="2026-07-24T09:39">Today 9:39 AM</time>
+                      <p class="imessage-bubble imessage-bubble--incoming">What kind of products do you enjoy designing?</p>
+                      <p class="imessage-bubble imessage-bubble--outgoing">I enjoy web products, clear user flows, visual identities, and the wonderfully tangled spaces where structure and personality need to meet.</p>
+                      <span class="imessage-delivery">Delivered</span>
+                    </div>
+                    <div class="imessage-answer" id="aami-answer-3" hidden>
+                      <time datetime="2026-07-24T09:35">Today 9:35 AM</time>
+                      <p class="imessage-bubble imessage-bubble--incoming">What does good design work look like to you?</p>
+                      <p class="imessage-bubble imessage-bubble--outgoing">Clear enough to use without effort, thoughtful enough to remember, and grounded in what people and the business actually need.</p>
+                      <span class="imessage-delivery">Delivered</span>
+                    </div>
+                    <div class="imessage-answer" id="aami-answer-4" hidden>
+                      <time datetime="2026-07-24T09:32">Today 9:32 AM</time>
+                      <p class="imessage-bubble imessage-bubble--incoming">Can you work with code too?</p>
+                      <p class="imessage-bubble imessage-bubble--outgoing">Yes. I work with HTML, CSS, and JavaScript, which helps me design practical interfaces and collaborate closely through implementation.</p>
+                      <span class="imessage-delivery">Delivered</span>
+                    </div>
+                    <div class="imessage-answer" id="aami-answer-5" hidden>
+                      <time datetime="2026-07-24T09:30">Today 9:30 AM</time>
+                      <p class="imessage-bubble imessage-bubble--incoming">How can I reach you?</p>
+                      <p class="imessage-bubble imessage-bubble--outgoing">Send me a note at <a href="mailto:aminamuringoli@gmail.com">aminamuringoli@gmail.com</a>. I&rsquo;d love to hear what you&rsquo;re building.</p>
+                      <span class="imessage-delivery">Delivered</span>
+                    </div>
+                  </div>
+
+                  <div class="imessage-composer" aria-hidden="true">
+                    <span class="imessage-composer__plus">
+                      <img src="https://api.iconify.design/lucide:plus.svg" alt="" />
+                    </span>
+                    <span class="imessage-composer__field">
+                      <span>iMessage</span>
+                      <img src="https://api.iconify.design/lucide:mic.svg" alt="" />
+                    </span>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-resume-section" aria-labelledby="about-resume-title">
+        <div class="about-resume-inner">
+          <button class="about-resume-preview" type="button" data-resume-preview aria-label="Open Aami's resume preview">
+            <img class="about-resume-preview__image" src="/assets/amina-resume-clip-preview-final.png" alt="Clipped paper stack preview of Aami's resume" />
+          </button>
+
+          <div class="about-resume-details">
+            <img class="about-resume-mark" src="/assets/resume-paper-curl-icon.png" alt="" aria-hidden="true" />
+            <h2 id="about-resume-title">Grab my resume!</h2>
+            <p>
+              A quick look at my product and UI/UX design work, visual systems, practical front-end skills,
+              and the projects I have shaped along the way.
+            </p>
+            <div class="about-resume-actions">
+              <a class="about-resume-button" href="/works/">
+                <span>Explore Projects</span>
+                <span aria-hidden="true">&nearr;</span>
+              </a>
+              <a class="about-resume-button about-resume-button--dark" href="/Amina-M-Resume.pdf?v=2" download>
+                <span>Download Resume</span>
+                <span aria-hidden="true">&darr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="about-resume-modal" data-resume-modal hidden>
+      <button class="about-resume-modal__backdrop" type="button" data-resume-modal-close aria-label="Close resume preview"></button>
+      <div class="about-resume-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="about-resume-modal-title">
+        <div class="about-resume-modal__bar">
+          <p id="about-resume-modal-title">Aami's resume</p>
+          <button type="button" data-resume-modal-close aria-label="Close resume preview">&times;</button>
+        </div>
+        <img src="/assets/amina-resume-clip-preview-final.png" alt="Full preview of Aami's resume" />
+      </div>
+    </div>
+
+    <script src="/script.js?v=126"></script>
+  </body>
+</html>

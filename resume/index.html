@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/desktop-preview.js?v=3"></script>
+    <meta name="description" content="Resume of Amina M, UI/UX and Product Designer at Designsbyami." />
+    <title>Resume - Designsbyami</title>
+    <script>
+      (() => {
+        try {
+          const savedTheme = localStorage.getItem("amina-theme");
+          document.documentElement.dataset.theme = savedTheme === "dark" || savedTheme === "light" ? savedTheme : "light";
+        } catch {
+          document.documentElement.dataset.theme = "light";
+        }
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=DM+Sans:wght@300;400;500;600&family=Instrument+Serif:wght@400;700&family=Jost:wght@300;400;500;600&family=Unbounded:wght@600&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="/assets/user-stickers/designsbyaami-logo-header.png" />
+    <link rel="stylesheet" href="/styles.css?v=214" />
+  </head>
+  <body class="resume-page" data-resume-page>
+    <a class="skip-link" href="#resume-page">Skip to resume</a>
+
+    <canvas class="gradient-flow-bg" data-gradient-flow aria-hidden="true"></canvas>
+
+    <button class="hero-theme-toggle shared-theme-toggle" id="theme-lamp" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+      <span class="hero-theme-toggle__track" aria-hidden="true"><span></span></span>
+      <span class="hero-theme-toggle__label">Dark</span>
+    </button>
+
+    <header class="site-navbar" aria-label="Primary navigation">
+      <nav class="site-navbar__pill">
+        <a class="site-navbar__brand" href="/" aria-label="Designs by Aami — Home">
+          <img src="/assets/user-stickers/designsbyaami-logo-header.png" alt="Designs by Aami" />
+        </a>
+        <span class="site-navbar__indicator" aria-hidden="true"></span>
+        <a href="/" class="site-navbar__link"><img class="site-navbar__icon" src="/assets/icons/lucide-home.svg" alt="" aria-hidden="true" /><span>Home</span></a>
+        <a href="/about/" class="site-navbar__link"><img class="site-navbar__icon" src="/assets/icons/lucide-user.svg" alt="" aria-hidden="true" /><span>About</span></a>
+        <a href="/works/" class="site-navbar__link"><img class="site-navbar__icon" src="/assets/icons/lucide-briefcase.svg" alt="" aria-hidden="true" /><span>Works</span></a>
+        <a href="/resume/" class="site-navbar__link is-active" data-nav-section="resume-page" aria-current="page"><img class="site-navbar__icon" src="/assets/icons/lucide-file-text.svg" alt="" aria-hidden="true" /><span>Resume</span></a>
+        <a href="/contact/" class="site-navbar__link"><img class="site-navbar__icon" src="/assets/icons/lucide-message.svg" alt="" aria-hidden="true" /><span>Contact</span></a>
+      </nav>
+    </header>
+
+    <main id="resume-page" class="resume-page-main">
+      <header class="resume-intro">
+        <p class="resume-kicker">
+          <img src="/assets/icons/phosphor-star-four-fill.svg" alt="" aria-hidden="true" />
+          <span>Resume</span>
+        </p>
+        <h1 data-resume-title>oh sure, let&rsquo;s keep it formal.</h1>
+        <p class="resume-deck">For recruiters, hiring managers, and anyone who prefers<br />the short version.</p>
+      </header>
+
+      <div class="resume-stage" aria-label="Amina's resume">
+        <a class="resume-sheet resume-sheet--pdf" href="/Amina-M-Resume.pdf?v=2" target="_blank" rel="noopener noreferrer" aria-label="Open Amina M's resume PDF">
+          <img src="/assets/amina-resume-preview.png?v=2" alt="Amina M resume with summary, education, projects, skills, volunteering, and certifications" />
+        </a>
+      </div>
+
+      <div class="resume-download-row">
+        <a class="resume-download" href="/Amina-M-Resume.pdf?v=2" target="_blank" rel="noopener noreferrer" download>
+          <span class="resume-download__icon" aria-hidden="true">&darr;</span>
+          <span>Download resume</span>
+        </a>
+      </div>
+    </main>
+
+    <script src="/script.js?v=126"></script>
+  </body>
+</html>

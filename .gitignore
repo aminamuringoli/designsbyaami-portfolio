@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+
+# Production builds
+dist/
+.dist/
+.next/
+out/
+build/
+
+# Tool and package-manager caches
+.cache/
+.parcel-cache/
+.turbo/
+.vercel/
+.npm/
+coverage/
+
+# Local environment files and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Temporary and generated QA files
+tmp/
+temp/
+screenshots/
+*.tmp
+*.temp
+*.log
+server-out.log
+server-err.log
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local Codex metadata
+.agents/
+

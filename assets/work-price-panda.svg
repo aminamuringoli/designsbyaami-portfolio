@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Replaceable project image">
+  <rect width="1200" height="900" rx="52" fill="#f6f5f1"/>
+  <path d="M0 0h1200v900H0z" fill="#f6f5f1"/>
+  <circle cx="218" cy="214" r="132" fill="#7ed8f2"/>
+  <circle cx="962" cy="178" r="164" fill="#ff1f25"/>
+  <path d="M264 610c80-142 234-206 381-160 138 43 214 165 341 129 74-21 122-79 151-129v450H0V732c83 18 195 12 264-122Z" fill="#ffd248"/>
+  <rect x="287" y="244" width="626" height="392" rx="44" fill="#ffffff" stroke="#000000" stroke-width="12"/>
+  <path d="M406 497h388M406 431h252M406 365h318" stroke="#061bd8" stroke-width="26" stroke-linecap="round"/>
+  <path d="M600 152c63 0 114 51 114 114S663 380 600 380s-114-51-114-114 51-114 114-114Z" fill="#f77bc6" stroke="#000000" stroke-width="12"/>
+  <text x="600" y="707" text-anchor="middle" fill="#000000" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="700">replace image</text>
+</svg>
