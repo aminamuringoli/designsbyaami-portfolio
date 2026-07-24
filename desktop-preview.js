@@ -279,8 +279,14 @@
     }
   };
 
-  const resetHorizontalScroll = () => {
-    window.scrollTo({ left: 0, top: window.scrollY, behavior: "auto" });
+  const alignDesktopViewport = () => {
+    const documentWidth = Math.max(
+      document.documentElement.scrollWidth,
+      document.body?.scrollWidth || 0,
+    );
+    const viewportWidth = document.documentElement.clientWidth;
+    const centeredOffset = Math.max(0, (documentWidth - viewportWidth) / 2);
+    window.scrollTo({ left: centeredOffset, top: window.scrollY, behavior: "auto" });
   };
 
   const runDelayedRecalculations = () => {
@@ -291,7 +297,7 @@
         state.recalculationTimers.delete(timer);
         if (!state.desktop) return;
         enforceDesktopViewport();
-        resetHorizontalScroll();
+        alignDesktopViewport();
         if (isLandscape() && state.overlay?.classList.contains("desktop-preview-overlay--rotation")) {
           dismissOverlay();
         }
@@ -305,7 +311,7 @@
     applyDesktopViewport();
     startViewportProtection();
     updateControl();
-    resetHorizontalScroll();
+    alignDesktopViewport();
     attemptLandscapeLock();
     runDelayedRecalculations();
     if (showRotation) scheduleManaged(showRotationMessage, 180);
@@ -322,7 +328,7 @@
     applyMobileViewport();
     updateControl();
     unlockOrientation();
-    resetHorizontalScroll();
+    alignDesktopViewport();
   };
 
   const showRecommendation = () => {
@@ -388,7 +394,7 @@
     state.resizeTimer = window.setTimeout(() => {
       if (!state.desktop) return;
       enforceDesktopViewport();
-      resetHorizontalScroll();
+      alignDesktopViewport();
       if (isLandscape() && state.overlay?.classList.contains("desktop-preview-overlay--rotation")) {
         dismissOverlay();
       }

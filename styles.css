@@ -19810,6 +19810,27 @@ html.desktop-preview-active .desktop-view-toggle img {
   height: calc(20px * var(--desktop-preview-inverse-scale));
 }
 
+/* Keep the scaled desktop canvas centered and prevent decorative elements from
+   creating a one-sided mobile crop. */
+html.desktop-preview-active {
+  width: 100%;
+  overflow-x: clip;
+  scrollbar-gutter: stable both-edges;
+}
+
+html.desktop-preview-active body {
+  width: 100%;
+  min-width: 0;
+  margin-inline: auto;
+  overflow-x: clip;
+}
+
+html.desktop-preview-active main,
+html.desktop-preview-active .site-navbar,
+html.desktop-preview-active main > section {
+  margin-inline: auto;
+}
+
 .desktop-preview-overlay {
   position: fixed;
   inset: 0;
