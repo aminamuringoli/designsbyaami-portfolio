@@ -20090,3 +20090,100 @@ html.desktop-preview-active .project-action-header {
     top: 50px;
   }
 }
+
+/* Phone hero composition: keep the headline and assistant in a clear central lane. */
+@media (max-width: 560px) {
+  .sara-sticker--sara-note {
+    left: 14px;
+    right: auto;
+    top: 116px;
+    width: 112px;
+    height: 112px;
+  }
+
+  .sara-sticker--sara-note .sara-sticker-note__copy {
+    padding: 9px 11px 0 27px;
+    font-size: 9.5px;
+  }
+
+  .muhid-music-player {
+    right: 12px;
+    top: 116px;
+    width: 164px;
+    height: 184px;
+    border-radius: 18px;
+  }
+
+  .muhid-music-player__vinyl {
+    top: -88px;
+    width: 166px;
+    height: 166px;
+  }
+
+  .muhid-music-player__panel {
+    gap: 6px;
+    padding: 0 13px 12px;
+  }
+
+  .muhid-music-player__equalizer { height: 13px; }
+  .muhid-music-player__title { font-size: 10px; }
+  .muhid-music-player__meta { font-size: 6px; }
+  .muhid-music-player__controls { margin-top: 2px; }
+
+  .hero-wall-prop--paperclip {
+    left: -18px;
+    top: 590px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .hero-wall-prop--binder {
+    right: -14px;
+    top: 680px;
+    width: 68px;
+    height: 68px;
+  }
+
+  .sara-sticker--folder {
+    left: 24px;
+    top: 760px;
+    bottom: auto;
+    width: 88px;
+    height: 88px;
+  }
+
+  .sara-folder-visual {
+    width: 88px;
+    height: 88px;
+  }
+
+  .sara-folder-icons {
+    top: 32px;
+    transform: scale(.7);
+  }
+}
+
+@media (max-width: 360px) {
+  .sara-sticker--sara-note {
+    left: 12px;
+    width: 96px;
+    height: 96px;
+  }
+
+  .sara-sticker--sara-note .sara-sticker-note__copy {
+    padding: 8px 9px 0 23px;
+    font-size: 8px;
+  }
+
+  .muhid-music-player {
+    right: 8px;
+    width: 148px;
+    height: 168px;
+  }
+
+  .muhid-music-player__vinyl {
+    top: -80px;
+    width: 150px;
+    height: 150px;
+  }
+}

@@ -1172,7 +1172,7 @@ function setupDraggableHeroObjects() {
   let topLayer = 90;
 
   objects.forEach((object) => {
-    const storageKey = `amina-reference-hero-session-v2-${object.id}`;
+    const storageKey = `amina-reference-hero-session-v4-${object.id}`;
     let originX = 0;
     let originY = 0;
     let currentX = 0;
