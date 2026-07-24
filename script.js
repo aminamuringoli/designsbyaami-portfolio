@@ -732,11 +732,10 @@ function setupProjectActionCards() {
       const nextRect = shells[index + 1].getBoundingClientRect();
       const progress = clamp((startLine - nextRect.top) / (startLine - endLine));
       const scale = 1 - progress * 0.065;
-      const opacity = 1 - progress * 0.16;
       const y = progress * -18;
 
       card.style.transform = `translate3d(0, ${y.toFixed(2)}px, 0) scale(${scale.toFixed(3)})`;
-      card.style.opacity = opacity.toFixed(3);
+      card.style.opacity = "1";
       card.style.pointerEvents = progress > 0.98 ? "none" : "";
     });
   };

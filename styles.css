@@ -12964,22 +12964,28 @@ select {
   left: 50%;
   display: block;
   width: auto;
-  max-width: none;
-  height: 100%;
+  max-width: calc(100% - 28px);
+  height: calc(100% - 28px);
   object-fit: contain;
+  transform: translate(-50%, -50%);
   transition: transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.selected-interface-card--invoice img { height: 130%; transform: translate(-50%, -30%); }
-.selected-interface-card--dimsum img { height: 92%; transform: translate(-46%, -44%); }
-.selected-interface-card--food img { height: 100%; transform: translate(-47%, -46%); }
-.selected-interface-card--analytics img { height: 80%; transform: translate(-30%, -48%); }
-.selected-interface-card--activity img { height: 100%; transform: translate(-50%, -40%); }
-.selected-interface-card--profile img { height: 95%; transform: translate(-35%, -40%); }
-.selected-interface-card--tracking img { height: 100%; transform: translate(-30%, -34%); }
-.selected-interface-card--checkout img { height: 140%; transform: translate(-50%, -25%); }
-.selected-interface-card--canvas img { height: 160%; transform: translate(-50%, -80%); }
-.selected-interface-card--chat img { height: 145%; transform: translate(-50%, -25%); }
+.selected-interface-card--wide img,
+.selected-interface-card--landscape img {
+  width: calc(100% - 28px);
+  height: auto;
+}
+
+.selected-interface-card--portrait img {
+  width: auto;
+  height: calc(100% - 24px);
+}
+
+.selected-interface-card--tall img {
+  width: auto;
+  height: calc(100% - 20px);
+}
 
 .selected-interface-card:hover img {
   filter: saturate(1.04);
@@ -13007,16 +13013,9 @@ select {
   transform-origin: center;
 }
 
-.selected-interface-card--invoice:hover img { transform: translate(-50%, -30%) scale(1.04); }
-.selected-interface-card--dimsum:hover img { transform: translate(-46%, -44%) scale(1.04); }
-.selected-interface-card--food:hover img { transform: translate(-47%, -46%) scale(1.04); }
-.selected-interface-card--analytics:hover img { transform: translate(-30%, -48%) scale(1.04); }
-.selected-interface-card--activity:hover img { transform: translate(-50%, -40%) scale(1.04); }
-.selected-interface-card--profile:hover img { transform: translate(-35%, -40%) scale(1.04); }
-.selected-interface-card--tracking:hover img { transform: translate(-30%, -34%) scale(1.04); }
-.selected-interface-card--checkout:hover img { transform: translate(-50%, -25%) scale(1.04); }
-.selected-interface-card--canvas:hover img { transform: translate(-50%, -80%) scale(1.04); }
-.selected-interface-card--chat:hover img { transform: translate(-50%, -25%) scale(1.04); }
+.selected-interface-card:hover img {
+  transform: translate(-50%, -50%) scale(1.04);
+}
 
 /* Keep this selector for older markup during cache refresh. */
 .selected-interfaces__track > li > img {
