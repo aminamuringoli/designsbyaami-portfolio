@@ -20066,6 +20066,34 @@ html.desktop-preview-active .project-action-header {
   margin-top: 0;
 }
 
+/* Compact the long scroll stages when the 1280px desktop canvas is scaled to a phone. */
+html.desktop-preview-active .my-process-section {
+  height: 2260px;
+  min-height: 0;
+}
+
+html.desktop-preview-active .services-roll-section {
+  min-height: 560px;
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+
+html.desktop-preview-active .horizontal-words {
+  height: 1050px;
+  margin-top: 0;
+}
+
+html.desktop-preview-active .horizontal-words__content {
+  height: 720px;
+  min-height: 0;
+}
+
+html.desktop-preview-active .home-whatsapp-cta {
+  margin-top: -150px;
+  padding-top: 36px;
+  padding-bottom: 56px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .desktop-view-toggle img,
   .desktop-preview-overlay {
