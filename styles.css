@@ -20072,18 +20072,18 @@ html.desktop-preview-active .my-process-section {
 }
 
 html.desktop-preview-active .services-roll-section {
-  min-height: 435px;
-  padding-top: 28px;
-  padding-bottom: 28px;
+  min-height: 560px;
+  padding-top: 52px;
+  padding-bottom: 52px;
 }
 
 html.desktop-preview-active .horizontal-words {
-  height: calc(180 * var(--rolling-svh));
+  height: calc(200 * var(--rolling-svh));
   margin-top: 0;
 }
 
 html.desktop-preview-active .horizontal-words__content {
-  height: 560px;
+  height: 720px;
   min-height: 0;
 }
 
