@@ -20087,6 +20087,11 @@ html.desktop-preview-active .horizontal-words__content {
   min-height: 0;
 }
 
+html.desktop-preview-active .horizontal-words__bottom-text {
+  bottom: 48px;
+  transform: none;
+}
+
 html.desktop-preview-active .home-whatsapp-cta {
   margin-top: -150px;
   padding-top: 36px;
