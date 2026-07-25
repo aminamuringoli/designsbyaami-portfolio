@@ -20068,7 +20068,6 @@ html.desktop-preview-active .project-action-header {
 
 /* Compact the long scroll stages when the 1280px desktop canvas is scaled to a phone. */
 html.desktop-preview-active .my-process-section {
-  height: 2260px;
   min-height: 0;
 }
 
@@ -20079,7 +20078,7 @@ html.desktop-preview-active .services-roll-section {
 }
 
 html.desktop-preview-active .horizontal-words {
-  height: 1050px;
+  height: calc(200 * var(--rolling-svh));
   margin-top: 0;
 }
 

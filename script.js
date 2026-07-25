@@ -770,7 +770,8 @@ function setupMyProcessSection() {
 
     maxTranslate = Math.max(0, track.scrollWidth - viewport.clientWidth);
     scrollEnd = 110 + maxTranslate / 0.96;
-    const exitHold = window.innerWidth <= 700 ? 230 : 290;
+    const desktopPreviewActive = document.documentElement.classList.contains("desktop-preview-active");
+    const exitHold = desktopPreviewActive ? 40 : (window.innerWidth <= 700 ? 230 : 290);
     section.style.setProperty("--process-scroll-length", `${Math.ceil(scrollEnd + exitHold)}px`);
   };
 
