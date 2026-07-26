@@ -1413,6 +1413,15 @@ body.is-loading {
   -webkit-user-drag: none;
 }
 
+.services-roll-preview-panel--contain {
+  padding: 8px;
+  background: #ffffff;
+}
+
+.services-roll-preview-panel--contain img {
+  object-fit: contain;
+}
+
 .behind-pixels-section {
   position: relative;
   z-index: 6;
@@ -10586,6 +10595,7 @@ body,
   height: 100%;
   object-fit: cover;
   object-position: 50% 44%;
+  pointer-events: none;
   transition: transform 900ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -14460,7 +14470,7 @@ select {
 .home-about-polaroid:focus-visible .home-about-photo-window img { transform: none; }
 
 .home-about-polaroid.is-dragging {
-  z-index: 4;
+  z-index: 999;
   cursor: grabbing;
   filter: none;
   transition: none;

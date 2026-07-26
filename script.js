@@ -2241,18 +2241,18 @@ setupInteractiveShapeGridBackground();
 
 function setupAboutPolaroidInteraction() {
   const polaroid = document.querySelector("[data-about-polaroid]");
-  const section = polaroid?.closest(".home-about-section");
   const home = polaroid?.closest(".home-about-portrait");
-  if (!polaroid || !section || !home) return;
+  if (!polaroid || !home) return;
 
   let pointerId = null;
   let pressed = false;
   let dragging = false;
   let startX = 0;
   let startY = 0;
+  let originX = 0;
+  let originY = 0;
   let currentX = 0;
   let currentY = 0;
-  let startRect = null;
   let settleTimer = 0;
 
   const writePosition = (x, y) => {
@@ -2260,16 +2260,6 @@ function setupAboutPolaroidInteraction() {
     currentY = y;
     polaroid.style.setProperty("--about-drag-x", `${x.toFixed(1)}px`);
     polaroid.style.setProperty("--about-drag-y", `${y.toFixed(1)}px`);
-  };
-
-  const constrain = (x, y) => {
-    if (!startRect) return { x, y };
-    const bounds = section.getBoundingClientRect();
-    const inset = 18;
-    return {
-      x: Math.min(Math.max(x, bounds.left + inset - startRect.left), bounds.right - inset - startRect.right),
-      y: Math.min(Math.max(y, bounds.top + inset - startRect.top), bounds.bottom - inset - startRect.bottom),
-    };
   };
 
   const putBack = () => {
@@ -2290,7 +2280,10 @@ function setupAboutPolaroidInteraction() {
     pointerId = event.pointerId;
     startX = event.clientX;
     startY = event.clientY;
-    startRect = polaroid.getBoundingClientRect();
+    originX = currentX;
+    originY = currentY;
+    polaroid.setPointerCapture?.(event.pointerId);
+    if (event.cancelable) event.preventDefault();
   });
 
   polaroid.addEventListener("pointermove", (event) => {
@@ -2304,11 +2297,9 @@ function setupAboutPolaroidInteraction() {
       polaroid.classList.add("is-dragging");
       home.classList.add("is-polaroid-away");
       polaroid.setAttribute("aria-grabbed", "true");
-      polaroid.setPointerCapture?.(event.pointerId);
     }
 
-    const next = constrain(deltaX, deltaY);
-    writePosition(next.x, next.y);
+    writePosition(originX + deltaX, originY + deltaY);
     if (event.cancelable) event.preventDefault();
   });
 
@@ -2318,7 +2309,8 @@ function setupAboutPolaroidInteraction() {
     if (dragging) {
       dragging = false;
       polaroid.setAttribute("aria-grabbed", "false");
-      putBack();
+      polaroid.classList.remove("is-dragging");
+      home.classList.remove("is-polaroid-away");
     }
     polaroid.releasePointerCapture?.(event.pointerId);
   };
