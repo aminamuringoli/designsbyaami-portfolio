@@ -14444,7 +14444,8 @@ select {
   background: #ffffff;
   box-shadow: 0 4px 12px rgba(23, 20, 14, 0.1), 0 1px 4px rgba(23, 20, 14, 0.08);
   cursor: grab;
-  touch-action: pan-y;
+  touch-action: none;
+  user-select: none;
   transform: translate3d(var(--about-drag-x), var(--about-drag-y), 0);
   transition: transform 440ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 220ms ease;
   will-change: transform;
