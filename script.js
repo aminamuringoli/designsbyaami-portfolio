@@ -2939,6 +2939,65 @@ function setupAamiArcade() {
 
 setupAamiArcade();
 
+function formatVisitorOrdinal(value) {
+  const remainder100 = value % 100;
+  if (remainder100 >= 11 && remainder100 <= 13) return `${value}th`;
+
+  switch (value % 10) {
+    case 1:
+      return `${value}st`;
+    case 2:
+      return `${value}nd`;
+    case 3:
+      return `${value}rd`;
+    default:
+      return `${value}th`;
+  }
+}
+
+async function setupVisitorCounter() {
+  const counter = document.querySelector("[data-visitor-counter]");
+  if (!counter) return;
+
+  const sessionKey = "designsbyaami-visitor-counted";
+  let hasBeenCounted = false;
+
+  try {
+    hasBeenCounted = sessionStorage.getItem(sessionKey) === "true";
+  } catch {
+    // A visit can still be counted when browser storage is unavailable.
+  }
+
+  try {
+    const response = await fetch("/api/visitors", {
+      method: hasBeenCounted ? "GET" : "POST",
+      headers: { Accept: "application/json" },
+    });
+
+    if (!response.ok) throw new Error("Visitor counter request failed");
+
+    const data = await response.json();
+    const count = Number(data.count);
+    if (!Number.isFinite(count) || count < 1) throw new Error("Invalid visitor count");
+
+    counter.textContent = `You’re my ${formatVisitorOrdinal(count)} visitor.`;
+
+    if (!hasBeenCounted) {
+      try {
+        sessionStorage.setItem(sessionKey, "true");
+      } catch {
+        // The displayed count remains valid for this page load.
+      }
+    }
+  } catch {
+    counter.textContent = "You’re one of my lovely visitors.";
+  } finally {
+    counter.setAttribute("aria-busy", "false");
+  }
+}
+
+setupVisitorCounter();
+
 themeButton?.addEventListener("click", () => {
   const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
   setTheme(nextTheme);

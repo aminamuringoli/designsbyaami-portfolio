@@ -4,6 +4,7 @@ const path = require("path");
 
 const root = __dirname;
 const port = Number(process.env.PORT || 5173);
+let localVisitorCount = 189;
 
 const types = {
   ".html": "text/html; charset=utf-8",
@@ -20,6 +21,16 @@ const types = {
 const server = http.createServer((req, res) => {
   const url = new URL(req.url, "http://localhost");
   let pathname = decodeURIComponent(url.pathname);
+
+  if (pathname === "/api/visitors") {
+    if (req.method === "POST") localVisitorCount += 1;
+    res.writeHead(200, {
+      "Cache-Control": "no-store",
+      "Content-Type": "application/json; charset=utf-8",
+    });
+    res.end(JSON.stringify({ count: localVisitorCount }));
+    return;
+  }
 
   if (pathname === "/") {
     pathname = "/index.html";

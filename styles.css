@@ -19240,8 +19240,28 @@ html[data-theme="dark"] .contact-service-option input:checked + label {
   display: grid;
   width: 100%;
   place-items: center;
+  row-gap: 18px;
   padding: 54px 24px 76px;
   background: transparent;
+}
+
+.home-visitor-counter {
+  min-height: 1.35em;
+  margin: 0;
+  color: #77777d;
+  font-family: "DM Sans", var(--font-body), sans-serif !important;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.home-visitor-counter[aria-busy="true"] {
+  opacity: 0.72;
+}
+
+html[data-theme="dark"] .home-visitor-counter {
+  color: rgba(245, 247, 248, 0.62);
 }
 
 .arjuna-call-button {
@@ -19433,6 +19453,10 @@ html[data-theme="dark"] .contact-service-option input:checked + label {
 @media (hover: none), (max-width: 809px) {
   .home-whatsapp-cta {
     padding: 38px 28px 58px;
+  }
+
+  .home-visitor-counter {
+    font-size: 15px;
   }
 
   .arjuna-call-button {
