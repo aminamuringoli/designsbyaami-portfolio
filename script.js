@@ -2241,8 +2241,9 @@ setupInteractiveShapeGridBackground();
 
 function setupAboutPolaroidInteraction() {
   const polaroid = document.querySelector("[data-about-polaroid]");
+  const section = polaroid?.closest(".home-about-section");
   const home = polaroid?.closest(".home-about-portrait");
-  if (!polaroid || !home) return;
+  if (!polaroid || !section || !home) return;
 
   let pointerId = null;
   let pressed = false;
@@ -2270,6 +2271,7 @@ function setupAboutPolaroidInteraction() {
     settleTimer = window.setTimeout(() => {
       polaroid.classList.remove("is-settling");
       home.classList.remove("is-polaroid-away");
+      section.classList.remove("has-floating-polaroid");
     }, 460);
   };
 
@@ -2294,6 +2296,7 @@ function setupAboutPolaroidInteraction() {
     if (!dragging && Math.hypot(deltaX, deltaY) < 5) return;
     if (!dragging) {
       dragging = true;
+      section.classList.add("has-floating-polaroid");
       polaroid.classList.add("is-dragging");
       home.classList.add("is-polaroid-away");
       polaroid.setAttribute("aria-grabbed", "true");
